@@ -1,0 +1,14 @@
+{
+  "name": "wussdocs",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "cnyballk <584518260@qq.com>",
+  "license": "MIT",
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
+  },
+  "devDependencies": {
+    "vuepress": "^0.14.2"
+  }
+}
