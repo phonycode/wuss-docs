@@ -8,10 +8,11 @@ module.exports = {
     nav: [
       { text: '首页', link: '/' },
       { text: '快速上手', link: '/quickstart' },
+      { text: 'GitHub', link: 'https://github.com/phonycode/wuss' },
     ],
-    repo: 'phonycode/wuss',
+    repo: 'phonycode/wuss-docs',
     docsDir: 'docs',
-    docsBranch: 'dev',
+    docsBranch: 'master',
     editLinks: true,
     sidebar: [
       {
