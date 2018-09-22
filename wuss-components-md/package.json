@@ -1,0 +1,22 @@
+{
+  "name": "wuss-components-md",
+  "version": "1.0.0",
+  "main": "./src/parser.js",
+  "scripts": {
+    "test": "node ./test/test.js",
+    "build": "node ./scripts/docs.js"
+  },
+  "keywords": [],
+  "author": "cnyballk <584518260@qq.com>",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/core": "^7.0.0-beta.51",
+    "@babel/plugin-proposal-class-properties": "^7.0.0-beta.51",
+    "@babel/plugin-proposal-object-rest-spread": "^7.0.0-beta.51",
+    "@babel/plugin-transform-modules-commonjs": "^7.0.0-beta.51",
+    "@babel/preset-react": "^7.0.0-beta.51",
+    "babylon": "^6.18.0",
+    "prettier": "^1.13.7",
+    "signale": "^1.2.1"
+  }
+}

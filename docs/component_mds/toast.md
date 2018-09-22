@@ -1,4 +1,4 @@
-## Alert 弹出框
+## Toast 提示
 
 ### 使用指南
 
@@ -6,6 +6,6 @@
 
 ```json
 "usingComponents": {
-  "w-alert": "path/to/w-alert/index",
+  "w-toast": "path/to/w-toast/index",
 }
 ```

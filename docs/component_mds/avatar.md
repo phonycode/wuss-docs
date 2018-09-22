@@ -1,4 +1,4 @@
-## Avtar 头像
+## Avatar 头像
 
 用来代表用户或事物，支持图片、图标或字符展示。
 
@@ -8,20 +8,42 @@
 
 ```json
 "usingComponents": {
-  "w-avtar": "path/to/w-avtar/index",
+  "w-avatar": "path/to/w-avatar/index",
 }
 ```
 
 ### 代码演示
 
-size 类型
-
-支持 `small`、`default`、`large` 两种类型，默认为 `default`
-
 ```html
+<w-pane title="Avatar" desc="头像" />
+
+<w-pane desc="Default" />
+<view class="pd" >
 	<w-avatar size="small">W</w-avatar>
 	<w-avatar>W</w-avatar>
 	<w-avatar size="large">W</w-avatar>
+</view>
+
+<w-pane desc="Use src" />
+<view class="pd" >
+	<w-avatar size="small" src="/pages/assets/logo.png" />
+	<w-avatar src="/pages/assets/logo.png" />
+	<w-avatar size="large" src="/pages/assets/logo.png" />
+</view>
+
+<w-pane desc="Shape is square" />
+<view class="pd" >
+	<w-avatar size="small" scale shape="square">W</w-avatar>
+	<w-avatar shape="square">W</w-avatar>
+	<w-avatar shape="square" size="large">W</w-avatar>
+</view>
+
+<w-pane desc="Custom Style" />
+<view class="pd" >
+	<w-avatar size="small" wuss-class="custom1">W</w-avatar>
+	<w-avatar wuss-class="custom2">W</w-avatar>
+	<w-avatar wuss-class="custom3" size="large">W</w-avatar>
+</view>
 ```
 
 ### API
