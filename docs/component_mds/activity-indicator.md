@@ -8,8 +8,8 @@
 
 ```json
 "usingComponents": {
-  "w-indicator": "/dist/w-activity-indicator/index",
-  "w-pane": "/dist/w-pane/index"
+  "w-indicator":"path/to/w-activity-indicator/index",
+  "w-pane":"path/to/w-pane/index"
 }
 ```
 

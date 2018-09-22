@@ -6,9 +6,9 @@
 
 ```json
 "usingComponents": {
-  "w-pane": "/dist/w-pane/index",
-  "w-button": "/dist/w-button/index",
-  "w-action-sheet": "/dist/w-action-sheet/index"
+  "w-pane":"path/to/w-pane/index",
+  "w-button":"path/to/w-button/index",
+  "w-action-sheet":"path/to/w-action-sheet/index"
 }
 ```
 
