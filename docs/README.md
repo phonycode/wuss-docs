@@ -1,6 +1,6 @@
 ---
 home: true
-heroImage: ./logo.png
+# heroImage: logo.png
 actionText: 马上使用 →
 actionLink: /quickstart
 features:
