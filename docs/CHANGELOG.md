@@ -17,7 +17,6 @@
 - 新增组件 Toast 提示
 - 新增组件 Alert 弹出框
 - 新增组件 Notice 通告
-- 新增组件 Picker 选择器
 - 新增组件 ActivityIndicator 活动指示器
 - 新增组件 Form 表单
 - 新增组件 Input 输入框

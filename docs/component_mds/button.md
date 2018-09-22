@@ -31,23 +31,23 @@
 
 #### 属性
 
-| 属性      | 说明                                                    | 类型    | 默认值  |
-| --------- | ------------------------------------------------------- | ------- | ------- |
-| type      | 按钮类型，可选值为 default/info/warn/danger             | string  | default |
-| disabled  | 设置禁用                                                | boolean | false   |
-| loading   | 设置按钮载入状态                                        | boolean | false   |
-| inline    | 设置为行内按钮                                          | boolean | false   |
-| ghost     | 设置为幽灵按钮                                          | boolean | false   |
-| dashed    | 设置为虚线按钮                                          | boolean | false   |
-| icon      | 添加按钮图标                                            | string  | -       |
-| iconSize  | 设置按钮图标大小                                        | string  | 40      |
-| iconColor | 设置按钮图标颜色                                        | string  | -       |
-| styles    | 按钮自定义样式                                          | string  | -       |
-| color     | 按钮字体颜色                                            | string  | -       |
-| bgColor   | 按钮背景颜色                                            | string  | -       |
-| flat      | 开启按钮扁平化                                          | boolean | false   |
-| full      | 撑满容器                                                | boolean | false   |
-| openType  | 设置为虚线按钮                                          | boolean | false   |
+| 属性      |                          说明                           | 类型    | 默认值  |
+| --------- | :-----------------------------------------------------: | ------- | ------- |
+| type      |       按钮类型，可选值为 default/info/warn/danger       | string  | default |
+| disabled  |                        设置禁用                         | boolean | false   |
+| loading   |                    设置按钮载入状态                     | boolean | false   |
+| inline    |                     设置为行内按钮                      | boolean | false   |
+| ghost     |                     设置为幽灵按钮                      | boolean | false   |
+| dashed    |                     设置为虚线按钮                      | boolean | false   |
+| icon      |                      添加按钮图标                       | string  | -       |
+| iconSize  |                    设置按钮图标大小                     | string  | 40      |
+| iconColor |                    设置按钮图标颜色                     | string  | -       |
+| styles    |                     按钮自定义样式                      | string  | -       |
+| color     |                      按钮字体颜色                       | string  | -       |
+| bgColor   |                      按钮背景颜色                       | string  | -       |
+| flat      |                     开启按钮扁平化                      | boolean | false   |
+| full      |                        撑满容器                         | boolean | false   |
+| openType  |                     设置为虚线按钮                      | boolean | false   |
 | formType  | 微信表单能力，具体支持可参考 [微信官方文档][button官方] | string  | -       |
 | openType  | 微信开放能力，具体支持可参考 [微信官方文档][button官方] | string  | -       |
 

@@ -134,17 +134,17 @@
 | labelSpan      |                           标题宽度可选值 1-5                            | number  |      - |
 | content        |                                  内容                                   | string  |      - |
 | desc           |                                附加描述                                 | string  |      - |
-| isLink         |                      是否是链接开启后显示右边箭头                       | boolean |      - |
+| isLink         |                      是否是链接开启后显示右边箭头                       | boolean |  false |
 | link           |                   isLink 为 true 时,link 为跳转的 url                   | string  |      - |
 | icon           |                                标题图标                                 | string  |      - |
 | iconSize       |                                图标大小                                 | string  |      - |
 | iconColor      |                                图标颜色                                 | string  |      - |
 | delta          |         当 linkType 值为 navigateBack 时有效，表示返回页面层数          | number  |      - |
 | linkType       | 跳转类型，类型有[navigateTo/redirectTo/switchTab/reLaunch/navigateBack] | string  |      - |
-| disabled       |                                禁用 cell                                | boolean |      - |
-| highlight      |                             开启 hoverclass                             | boolean |      - |
+| disabled       |                                禁用 cell                                | boolean |  false |
+| highlight      |                             开启 hoverclass                             | boolean |  false |
 | direction      |                            内容区的显示方向                             | string  |      - |
-| isValidateIcon |                                                                         | boolean |      - |
+| isValidateIcon |                                                                         | boolean |  false |
 
 #### 事件
 

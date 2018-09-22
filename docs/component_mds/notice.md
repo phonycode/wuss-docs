@@ -63,7 +63,7 @@ text="去首页看看有哪些组件"
 | url             |      mode 为 link 时跳转地址       | string  |      - |
 | openType        |      mode 为 link 时跳转类型       | string  |      - |
 | speed           | 滚动速度 scrollable 为 true 时有效 | number  |      - |
-| scrollable      |            是否可以滚动            | boolean |      - |
+| scrollable      |            是否可以滚动            | boolean |  false |
 | icon            |           左边的图标地址           | string  |      - |
 
 #### 事件
@@ -80,6 +80,6 @@ text="去首页看看有哪些组件"
 
 #### 自定义类名
 
-| 类名       | 说明 |
-| ---------- | ---- |
-| wuss-class | 无   |
+| 类名       | 说明         |
+| ---------- | ------------ |
+| wuss-class | 根节点样式类 |

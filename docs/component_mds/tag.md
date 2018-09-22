@@ -42,8 +42,8 @@
 
 | 属性      |     说明     |  类型   | 默认值 |
 | --------- | :----------: | :-----: | -----: |
-| visible   | 控制是否可见 | boolean |      - |
-| closeable | 是否可以关闭 | boolean |      - |
+| visible   | 控制是否可见 | boolean |  false |
+| closeable | 是否可以关闭 | boolean |  false |
 | color     |     颜色     | string  |      - |
 | tagStyle  |              | string  |      - |
 
@@ -61,6 +61,6 @@
 
 #### 自定义类名
 
-| 类名       | 说明 |
-| ---------- | ---- |
-| wuss-class | 无   |
+| 类名       | 说明         |
+| ---------- | ------------ |
+| wuss-class | 根节点样式类 |

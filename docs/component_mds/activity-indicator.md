@@ -1,12 +1,15 @@
 # ActivityIndicator 活动指示器
 
+常用 loading
+
 ### 使用指南
 
 在 page.json 中引入组件
 
 ```json
 "usingComponents": {
-  "w-activity-indicator": "path/to/w-activity-indicator/index",
+  "w-indicator": "/dist/w-activity-indicator/index",
+  "w-pane": "/dist/w-pane/index"
 }
 ```
 
@@ -57,30 +60,18 @@
 
 #### 属性
 
-| 属性       |                        说明                         |  类型   | 默认值 |
-| ---------- | :-------------------------------------------------: | :-----: | -----: |
-| show       |                 控制动画的显示隐藏                  | boolean |      - |
-| size       |      指示器的大小,分别为[small/default/larger]      | string  |      - |
-| color      |                     动画的颜色                      | string  |      - |
-| type       | 动画类型，可选参数为[snake/diffusion/ball/catapult] | string  |      - |
-| text       |                   附加的文本内容                    | string  |      - |
-| textStyles |                 附加的文本内容样式                  | string  |      - |
-
-#### 事件
-
-| 事件名 | 说明 | 参数 |
-| ------ | ---- | ---- |
-
-
-#### slot
-
-| 名称 | 说明 |
-| ---- | ---- |
-
+| 属性       |                        说明                         |  类型   |            默认值 |
+| ---------- | :-------------------------------------------------: | :-----: | ----------------: |
+| show       |                 控制动画的显示隐藏                  | boolean |             false |
+| size       |      指示器的大小,分别为[small/default/larger]      | string  |           default |
+| color      |                     动画的颜色                      | string  | rgb(252, 145, 83) |
+| type       | 动画类型，可选参数为[snake/diffusion/ball/catapult] | string  |             snake |
+| text       |                   附加的文本内容                    | string  |                 - |
+| textStyles |                 附加的文本内容样式                  | string  |                 - |
 
 #### 自定义类名
 
-| 类名                    | 说明 |
-| ----------------------- | ---- |
-| wuss-class              | 无   |
-| wuss-activity-indicator | 无   |
+| 类名                    | 说明         |
+| ----------------------- | ------------ |
+| wuss-class              | 根节点样式类 |
+| wuss-activity-indicator | loading 类   |

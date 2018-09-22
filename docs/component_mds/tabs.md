@@ -126,16 +126,16 @@ border="{{ false }}"
 | 属性          |        说明        |  类型   | 默认值 |
 | ------------- | :----------------: | :-----: | -----: |
 | currentIndex  | 初始化或者控制索引 | number  |      - |
-| transition    |  是否开启过渡动画  | boolean |      - |
-| line          |    是否开启线条    | boolean |      - |
+| transition    |  是否开启过渡动画  | boolean |  false |
+| line          |    是否开启线条    | boolean |  false |
 | lineSize      |  线条长度大小 0-1  | number  |      - |
-| border        |      开启线条      | boolean |      - |
+| border        |      开启线条      | boolean |  false |
 | borderColor   |      线条颜色      | string  |      - |
 | borderSize    |  线条粗细单位 px   | string  |      - |
 | duration      | 设置动画时长单位 s | number  |      - |
 | activeColor   |        颜色        | string  |      - |
 | textStyles    |      文本样式      | string  |      - |
-| fixed         |    是否开启定位    | boolean |      - |
+| fixed         |    是否开启定位    | boolean |  false |
 | itemThreshold |                    | number  |      - |
 
 #### 事件
@@ -152,6 +152,6 @@ border="{{ false }}"
 
 #### 自定义类名
 
-| 类名       | 说明 |
-| ---------- | ---- |
-| wuss-class | 无   |
+| 类名       | 说明         |
+| ---------- | ------------ |
+| wuss-class | 根节点样式类 |

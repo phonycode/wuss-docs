@@ -73,16 +73,16 @@
 
 | 属性       |                      说明                      |  类型   | 默认值 |
 | ---------- | :--------------------------------------------: | :-----: | -----: |
-| visible    |                  组件是否可见                  | boolean |      - |
+| visible    |                  组件是否可见                  | boolean |  false |
 | position   |       弹出位置,可选值:leftrighttopbottom       | string  |      - |
-| mask       |                 是否开启遮罩层                 | boolean |      - |
+| mask       |                 是否开启遮罩层                 | boolean |  false |
 | maskIndex  |             当前组件的 z-index 值              | number  |      - |
 | width      | 内容区的宽度，当 type 的值为 left,right 时生效 | string  |      - |
 | height     | 内容区的高度,当 type 的值为 top,bottom 时生效  | string  |      - |
 | padding    |                 内容区的内边距                 | string  |      - |
 | styles     |                                                | string  |      - |
 | zIndex     |                                                | number  |      - |
-| maskCancel |               点击遮罩层可否关闭               | boolean |      - |
+| maskCancel |               点击遮罩层可否关闭               | boolean |  false |
 
 #### 事件
 

@@ -130,14 +130,14 @@
 
 | 属性            |                         说明                          |  类型   | 默认值 |
 | --------------- | :---------------------------------------------------: | :-----: | -----: |
-| swiperOutBtns   | 侧滑菜单按钮列表参数有 text,color,background,disabled |  array  |      - |
+| swiperOutBtns   | 侧滑菜单按钮列表参数有 text,color,background,disabled |  array  |     [] |
 | backgroundColor |                       背景颜色                        | string  |      - |
 | buttonWidth     |                      按钮的宽度                       | number  |      - |
 | height          |                      容器的高度                       | number  |      - |
 | threshold       |                    侧滑触发的阀值                     | number  |      - |
-| close           |                       是否展开                        | boolean |      - |
-| autoClose       |                   点击按钮自动收起                    | boolean |      - |
-| disabled        |                     禁用侧滑菜单                      | boolean |      - |
+| close           |                       是否展开                        | boolean |  false |
+| autoClose       |                   点击按钮自动收起                    | boolean |  false |
+| disabled        |                     禁用侧滑菜单                      | boolean |  false |
 
 #### 事件
 
@@ -153,6 +153,6 @@
 
 #### 自定义类名
 
-| 类名       | 说明 |
-| ---------- | ---- |
-| wuss-class | 无   |
+| 类名       | 说明         |
+| ---------- | ------------ |
+| wuss-class | 根节点样式类 |

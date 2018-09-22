@@ -44,10 +44,10 @@
 | 属性      |            说明            |  类型   | 默认值 |
 | --------- | :------------------------: | :-----: | -----: |
 | color     |            颜色            | string  |      - |
-| disabled  |            禁用            | boolean |      - |
+| disabled  |            禁用            | boolean |  false |
 | title     |            标题            | string  |      - |
 | direction | 方向，可选值有[left/right] | string  |      - |
-| options   |                            |  array  |      - |
+| options   |                            |  array  |     [] |
 
 #### 事件
 
@@ -63,6 +63,6 @@
 
 #### 自定义类名
 
-| 类名       | 说明 |
-| ---------- | ---- |
-| wuss-class | 无   |
+| 类名       | 说明         |
+| ---------- | ------------ |
+| wuss-class | 根节点样式类 |

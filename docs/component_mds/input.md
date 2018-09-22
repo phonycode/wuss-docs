@@ -112,27 +112,27 @@
 | ------------------ | :--: | :-----: | -----: |
 | value              |      | string  |      - |
 | type               |      | string  |      - |
-| disabled           |      | boolean |      - |
+| disabled           |      | boolean |  false |
 | maxlength          |      | number  |      - |
 | placeholder        |      | string  |      - |
 | placeholderStyle   |      | string  |      - |
 | placeholderClass   |      | string  |      - |
 | cursor             |      | number  |      - |
 | cursorSpacing      |      | number  |      - |
-| focus              |      | boolean |      - |
+| focus              |      | boolean |  false |
 | selectionStart     |      | number  |      - |
 | selectionEnd       |      | number  |      - |
-| adjustPosition     |      | boolean |      - |
+| adjustPosition     |      | boolean |  false |
 | rows               |      | number  |      - |
-| autoHeight         |      | boolean |      - |
-| fixed              |      | boolean |      - |
+| autoHeight         |      | boolean |  false |
+| fixed              |      | boolean |  false |
 | label              |      | string  |      - |
 | moneyKeyboardAlign |      | string  |      - |
 | labelSpan          |      | number  |      - |
 | extra              |      | string  |      - |
-| clear              |      | boolean |      - |
+| clear              |      | boolean |  false |
 | count              |      | number  |      - |
-| readOnly           |      | boolean |      - |
+| readOnly           |      | boolean |  false |
 
 #### 事件
 

@@ -59,9 +59,9 @@
 
 | 属性      |             说明             |  类型   | 默认值 |
 | --------- | :--------------------------: | :-----: | -----: |
-| visible   |          显示/隐藏           | boolean |      - |
+| visible   |          显示/隐藏           | boolean |  false |
 | width     | dialog 的内容区宽度.默认 80% | string  |      - |
-| maskClose |   点击遮罩层是否可以关闭？   | boolean |      - |
+| maskClose |   点击遮罩层是否可以关闭？   | boolean |  false |
 | height    |  dialog 的内容区高度，可选   | string  |      - |
 
 #### 事件
@@ -78,6 +78,6 @@
 
 #### 自定义类名
 
-| 类名       | 说明 |
-| ---------- | ---- |
-| wuss-class | 无   |
+| 类名       | 说明         |
+| ---------- | ------------ |
+| wuss-class | 根节点样式类 |

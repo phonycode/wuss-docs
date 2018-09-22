@@ -67,7 +67,7 @@
 
 | 属性         | 说明 |  类型   | 默认值 |
 | ------------ | :--: | :-----: | -----: |
-| visible      |      | boolean |      - |
+| visible      |      | boolean |  false |
 | checkInDate  |      |  date   |      - |
 | checkOutDate |      |  date   |      - |
 | maxMonth     |      | number  |      - |
@@ -86,6 +86,6 @@
 
 #### 自定义类名
 
-| 类名       | 说明 |
-| ---------- | ---- |
-| wuss-class | 无   |
+| 类名       | 说明         |
+| ---------- | ------------ |
+| wuss-class | 根节点样式类 |

@@ -1,12 +1,23 @@
 # Form 表单
 
+日常表单
+
 ### 使用指南
 
 在 page.json 中引入组件
 
 ```json
 "usingComponents": {
-  "w-form": "path/to/w-form/index",
+	"w-cell-group": "path/to/w-cell-group/index",
+	"w-cell": "path/to/w-cell/index",
+	"w-input": "path/to/w-input/index",
+	"w-checkbox": "path/to/w-checkbox/index",
+	"w-button": "path/to/w-button/index",
+	"w-form": "path/to/w-form/index",
+	"w-switch": "path/to/w-switch/index",
+	"w-radio": "path/to/w-radio/index",
+	"w-validate": "path/to/w-validate/index",
+	"w-pane": "path/to/w-pane/index"
 }
 ```
 
@@ -79,24 +90,25 @@ isValidateBtn
 
 #### 属性
 
-| 属性          | 说明 |  类型   | 默认值 |
-| ------------- | :--: | :-----: | -----: |
-| isValidateBtn |      | boolean |      - |
+| 属性          | 说明                          |  类型   | 默认值 |
+| ------------- | ----------------------------- | :-----: | :----: |
+| isValidateBtn | 设置提交按钮跟随验证 disabled | boolean | false  |
 
 #### 事件
 
-| 事件名 | 说明 | 参数 |
-| ------ | ---- | ---- |
-
+| 事件名 | 说明         | 参数 |
+| ------ | ------------ | ---- |
+| submit | 表单提交事件 |      |
+| reset  | 表单重置事件 |      |
 
 #### slot
 
-| 名称 | 说明 |
-| ---- | ---- |
-
+| 名称 | 说明     |
+| ---- | -------- |
+|      | 表单组件 |
 
 #### 自定义类名
 
-| 类名       | 说明 |
-| ---------- | ---- |
-| wuss-class | 无   |
+| 类名       | 说明         |
+| ---------- | ------------ |
+| wuss-class | 根节点样式类 |

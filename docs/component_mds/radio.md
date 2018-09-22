@@ -49,7 +49,7 @@
 
 | 属性         |          说明           |  类型  | 默认值 |
 | ------------ | :---------------------: | :----: | -----: |
-| options      | 选项组{keyvalue...item} | array  |      - |
+| options      | 选项组{keyvalue...item} | array  |     [] |
 | defaultValue |       默认选中项        | string |      - |
 | label        |       选项组标题        | string |      - |
 | wModel       |                         | string |      - |
@@ -69,6 +69,6 @@
 
 #### 自定义类名
 
-| 类名       | 说明 |
-| ---------- | ---- |
-| wuss-class | 无   |
+| 类名       | 说明         |
+| ---------- | ------------ |
+| wuss-class | 根节点样式类 |

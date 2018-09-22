@@ -106,9 +106,9 @@
 | 属性     |              说明               |  类型   | 默认值 |
 | -------- | :-----------------------------: | :-----: | -----: |
 | size     | 大小,可选[small/default/larger] | string  |      - |
-| value    |                                 | boolean |      - |
+| value    |                                 | boolean |  false |
 | color    |       颜色，激活后的颜色        | string  |      - |
-| disabled |            是否禁用             | boolean |      - |
+| disabled |            是否禁用             | boolean |  false |
 
 #### 事件
 
@@ -124,6 +124,6 @@
 
 #### 自定义类名
 
-| 类名       | 说明 |
-| ---------- | ---- |
-| wuss-class | 无   |
+| 类名       | 说明         |
+| ---------- | ------------ |
+| wuss-class | 根节点样式类 |

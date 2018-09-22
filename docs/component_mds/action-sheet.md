@@ -6,7 +6,9 @@
 
 ```json
 "usingComponents": {
-  "w-action-sheet": "path/to/w-action-sheet/index",
+  "w-pane": "/dist/w-pane/index",
+  "w-button": "/dist/w-button/index",
+  "w-action-sheet": "/dist/w-action-sheet/index"
 }
 ```
 
@@ -50,26 +52,27 @@
 
 | 属性       |        说明        |  类型   | 默认值 |
 | ---------- | :----------------: | :-----: | -----: |
-| visible    |      是否可见      | boolean |      - |
-| items      | 当前传出的菜单列表 |  array  |      - |
-| maskCancel | 点击遮罩是否可关闭 | boolean |      - |
-| showCancel |  是否展示取消按钮  | boolean |      - |
-| cancelText |    取消按钮文字    | string  |      - |
+| visible    |      是否可见      | boolean |  false |
+| items      | 当前传出的菜单列表 |  array  |     [] |
+| maskCancel | 点击遮罩是否可关闭 | boolean |  false |
+| showCancel |  是否展示取消按钮  | boolean |  false |
+| cancelText |    取消按钮文字    | string  |   取消 |
 
 #### 事件
 
-| 事件名 | 说明 | 参数 |
-| ------ | ---- | ---- |
-
+| 事件名 | 说明           | 参数 |
+| ------ | -------------- | ---- |
+| close  | 取消回调       |
+| click  | 菜单被点击回调 |
 
 #### slot
 
-| 名称 | 说明 |
-| ---- | ---- |
-
+| 名称   | 说明     |
+| ------ | -------- |
+| header | 头部插槽 |
 
 #### 自定义类名
 
-| 类名       | 说明 |
-| ---------- | ---- |
-| wuss-class | 无   |
+| 类名       | 说明         |
+| ---------- | ------------ |
+| wuss-class | 根节点样式类 |
