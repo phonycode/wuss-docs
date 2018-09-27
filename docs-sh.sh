@@ -1,9 +1,9 @@
-yarn docs:build
+sudo npm run docs:build
 
 cd docs/.vuepress/dist
 
-git init
-git add -A
-git commit -m 'deploy'
+sudo git init
+sudo git add -A
+sudo git commit -m 'deploy'
 
-git push -f git@github.com:phonycode/wuss.git master:gh-pages
+sudo git push -f git@github.com:phonycode/wuss.git master:gh-pages

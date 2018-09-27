@@ -1,7 +1,6 @@
 ## 快速上手
 
 ### 使用之前
-
 在开始使用 Wuss Weapp 之前，你需要先阅读 [微信小程序自定义组件](https://developers.weixin.qq.com/miniprogram/dev/framework/custom-component/) 的相关文档。
 
 ### 如何使用

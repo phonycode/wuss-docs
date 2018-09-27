@@ -1,14 +1,16 @@
 ---
-home: true
-# heroImage: logo.png
+home: false
+heroImage: /logo.png
 actionText: 马上使用 →
 actionLink: /quickstart
 features:
   - title: 高质量
-    details: balabala...
+#    details: balabala...
   - title: 组件齐全
-    details: balabala...
+#    details: balabala...  
   - title: 高度自定义
-    details: balabala...
-footer: MIT Licensed | Copyright © 2018-present Wuss
+#    details: balabala...
+footer: MIT Licensed | Copyright © 2018-present Wuss-weapp
+layout: BasicLayout
+navbar: true
 ---
