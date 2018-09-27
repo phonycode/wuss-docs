@@ -1,9 +1,9 @@
-sudo npm run docs:build
+npm run docs:build
 
 cd docs/.vuepress/dist
 
-sudo git init
-sudo git add -A
-sudo git commit -m 'deploy'
+git init
+git add -A
+git commit -m 'deploy'
 
-sudo git push -f git@github.com:phonycode/wuss.git master:gh-pages
+git push -f git@github.com:phonycode/wuss.git master:gh-pages
