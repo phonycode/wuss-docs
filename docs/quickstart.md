@@ -27,7 +27,7 @@
 
 我们内置了所有组件的示例，您可以扫描下方的的小程序码体验
 
-<img width="200" src="./qrcode.jpg">
+<img width="200" src="./.vuepress/qrcode.jpg">
 
 或按以下方式在微信开发者工具中查看：
 
