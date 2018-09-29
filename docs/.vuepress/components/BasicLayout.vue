@@ -118,7 +118,7 @@
               <img src="../../qrcode.jpg" />
             </div>
           </button>
-          <a target="_blank" href="https://github.com/phonycode/wuss"><img src="https://img.shields.io/github/stars/phonycode/wuss.svg?style=social" /></a>
+          <a target="_blank" href="https://github.com/phonycode/wuss-weapp"><img src="https://img.shields.io/github/stars/phonycode/wuss.svg?style=social" /></a>
         </div>
       </div>
     </div>

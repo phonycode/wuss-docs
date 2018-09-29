@@ -1,19 +1,21 @@
 module.exports = {
   head: [['link', { rel: 'icon', href: 'logo.png' }]],
   title: 'Wuss-weapp',
-  base: '/wuss/',
+  base: '/wuss-weapp/',
   description: '一款高质量,组件齐全,高自定义的小程序组件库',
   scss: {
     module: {
-      rules: [{
+      rules: [
+        {
           test: /\.scss$/,
           use: [
-            "style-loader", // creates style nodes from JS strings
-            "css-loader", // translates CSS into CommonJS
-            "sass-loader" // compiles Sass to CSS, using Node Sass by default
-          ]
-      }]
-    }
+            'style-loader', // creates style nodes from JS strings
+            'css-loader', // translates CSS into CommonJS
+            'sass-loader', // compiles Sass to CSS, using Node Sass by default
+          ],
+        },
+      ],
+    },
   },
   themeConfig: {
     sidebarDepth: 0,
@@ -21,7 +23,7 @@ module.exports = {
       { text: '首页', link: '/' },
       { text: '组件库', link: '/component_mds/button' },
       { text: '快速上手', link: '/quickstart' },
-      { text: 'GitHub', link: 'https://github.com/phonycode/wuss' },
+      { text: 'GitHub', link: 'https://github.com/phonycode/wuss-weapp' },
     ],
     repo: 'phonycode/wuss-docs',
     docsDir: 'docs',
