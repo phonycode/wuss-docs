@@ -1,5 +1,5 @@
 module.exports = {
-  head: [['link', { rel: 'icon', href: 'logo.png' }]],
+  head: [['link', { rel: 'icon', href: '/logo.png' }]],
   title: 'Wuss-weapp',
   base: '/wuss-weapp/',
   description: '一款高质量,组件齐全,高自定义的小程序组件库',
