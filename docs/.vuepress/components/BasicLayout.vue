@@ -115,7 +115,7 @@
           <button class="primary">
             扫描演示
             <div class="qrcode-mask">
-              <img src="../../qrcode.jpg" />
+              <img src="../qrcode.jpg" />
             </div>
           </button>
           <a target="_blank" href="https://github.com/phonycode/wuss"><img src="https://img.shields.io/github/stars/phonycode/wuss.svg?style=social" /></a>
