@@ -14,33 +14,33 @@
 
 ```html
 <w-drop-menu
- dataItems="{{ dataItems }}"
- bind:selected="handleSelected"
- bind:sortChange="handleSelectedSort"
+ options="{{ options }}"
+ bind:onChange="handleChange"
 />
 
 <w-pane title="DropMenu" desc="下拉菜单" />
 ```
 
-### API
+### API ;.7ftcc
 
 #### 属性
 
 | 属性      | 说明 | 类型  | 默认值 |
 | --------- | :--: | :---: | -----: |
-| dataItems |      | array |      - |
+| options |      | array |      - |
 
 #### 事件
 
 | 事件名 | 说明 | 参数 |
 | ------ | ---- | ---- |
+| onChange | 筛选条件选中或改变时的回调     | event |      - |
 
 
 #### slot
 
 | 名称 | 说明 |
 | ---- | ---- |
-
+| filter |  当options的item type为filter并且定义了slotName时为对应组件的slot名称    | - |      - |
 
 #### 自定义类名
 

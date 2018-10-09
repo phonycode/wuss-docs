@@ -1,6 +1,7 @@
 ## v 1.0.3
 
 - Checkbox组件支持了多种图标类型，用户可以自选进行配置
+- 现在DropMenu组件支持了type为'filter'类型的格式，filter可以通过配置自定义是slot使用。目前支持的格式有[radio,checkbox,sort,filter],
 
 ## v 1.0.2
 

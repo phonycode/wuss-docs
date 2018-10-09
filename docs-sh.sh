@@ -6,4 +6,4 @@ sudo git init
 sudo git add -A
 sudo git commit -m 'deploy'
 
-sudo git push -f git@github.com:phonycode/wuss.git master:gh-pages
+sudo git push -f git@github.com:phonycode/wuss-weapp.git master:gh-pages
