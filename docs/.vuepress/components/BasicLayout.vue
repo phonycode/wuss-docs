@@ -142,7 +142,7 @@
 
     methods: {
       handleClick() {
-        window.location.href = '/wuss/quickstart.html' 
+        window.location.href = '/wuss-weapp/quickstart.html' 
       },
     },
 
