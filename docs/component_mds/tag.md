@@ -10,6 +10,12 @@
 }
 ```
 
+### 图片演示
+
+<img style="margin: 20px 0;" height="450px" src="../../resource/tag.jpg"/>
+
+
+
 ### 代码演示
 
 ```html

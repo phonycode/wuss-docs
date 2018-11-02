@@ -10,6 +10,13 @@
 }
 ```
 
+### 视频演示
+
+<video style="margin: 20px 0;" height="450px" autoplay="true" loop="true" controls x5-playsinline="true" playsinline="true" webkit-playsinline="true" src="../../resource/notice.mp4"
+/>
+
+
+
 ### 代码演示
 
 ```html

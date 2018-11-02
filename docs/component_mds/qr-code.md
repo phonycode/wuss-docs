@@ -10,6 +10,12 @@
 }
 ```
 
+### 图片演示
+
+<img style="margin: 20px 0;" height="450px" src="../../resource/qrcode.jpg"/>
+
+
+
 ### 代码演示
 
 ```html
@@ -23,7 +29,7 @@
    text="{{ code }}"
  />
 </view>
-<w-button type="info" bind:click="handleClick">取随机值</w-button>
+<w-button type="info" bind:onClick="handleClick">取随机值</w-button>
 
 
 <w-pane desc="Size" />

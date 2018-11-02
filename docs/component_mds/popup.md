@@ -10,6 +10,13 @@
 }
 ```
 
+
+### 视频演示
+
+<video style="margin: 20px 0;" height="450px" autoplay="true" loop="true" controls x5-playsinline="true" playsinline="true" webkit-playsinline="true" src="../../resource/popup.mp4"
+/>
+
+
 ### 代码演示
 
 ```html
@@ -17,54 +24,149 @@
 
 <w-pane desc="Position" />
 
-<w-button type="info" bind:click="handleClick1">Top</w-button>
+<w-button type="info" bind:onClick="handleClick1">Top</w-button>
 <w-popup
  visible="{{ popup1 }}"
  position="top"
  height="250px"
  bind:close="handleClose"
 >
- <view wx:for="{{100}}" wx:key="index">{{ index }}</view>
+	<scroll-view scroll-y class="scroll-view-x">
+		<view
+		 class=""
+		 wx:for="{{50}}"
+		 wx:key="index"
+		 hover-class="none"
+		 hover-stop-propagation="false"
+		>
+			{{ index }}
+		</view>
+	</scroll-view>
 </w-popup>
-<w-button type="info" bind:click="handleClick2">Bottom</w-button>
+<w-button type="info" bind:onClick="handleClick2">Bottom</w-button>
 <w-popup
  visible="{{ popup2 }}"
  position="bottom"
  height="250px"
  bind:close="handleClose"
 >
- <view wx:for="{{100}}" wx:key="index">{{ index }}</view>
+	<scroll-view scroll-y class="scroll-view-x">
+		<view
+		 class=""
+		 wx:for="{{50}}"
+		 wx:key="index"
+		 hover-class="none"
+		 hover-stop-propagation="false"
+		>
+			{{ index }}
+		</view>
+	</scroll-view>
 </w-popup>
-<w-button type="info" bind:click="handleClick3">Left</w-button>
+<w-button type="info" bind:onClick="handleClick3">Left</w-button>
 <w-popup
  visible="{{ popup3 }}"
  position="left"
  bind:close="handleClose"
 >
- <view wx:for="{{100}}" wx:key="index">{{ index }}</view>
+	<scroll-view scroll-y class="scroll-view-y">
+		<view
+		 class=""
+		 wx:for="{{50}}"
+		 wx:key="index"
+		 hover-class="none"
+		 hover-stop-propagation="false"
+		>
+			{{ index }}
+		</view>
+	</scroll-view>
 </w-popup>
-<w-button type="info" bind:click="handleClick4">Right</w-button>
+<w-button type="info" bind:onClick="handleClick4">Right</w-button>
 <w-popup
  visible="{{ popup4 }}"
  position="right"
  bind:close="handleClose"
 >
- <view wx:for="{{100}}" wx:key="index">{{ index }}</view>
+	<scroll-view scroll-y class="scroll-view-y">
+		<view
+		 class=""
+		 wx:for="{{50}}"
+		 wx:key="index"
+		 hover-class="none"
+		 hover-stop-propagation="false"
+		>
+			{{ index }}
+		</view>
+	</scroll-view>
 </w-popup>
 
-<w-pane desc="Disabled Mask" />
+<w-pane desc="Disabled MaskCancel" />
 
-<w-button type="info" bind:click="handleClick5">Info</w-button>
+<w-button type="info" bind:onClick="handleClick5">Info</w-button>
 <w-popup
+ mask-cancel="{{ false }}"
  visible="{{ popup5 }}"
  position="bottom"
  height="250px"
  bind:close="handleClose"
- mask="{{false}}"
 >
- <view wx:for="{{100}}" wx:key="index">{{ index }}</view>
- <w-button type="info" bind:click="handleClose">关闭</w-button>
+	<scroll-view scroll-y class="scroll-view-x">
+		<view
+		 class=""
+		 wx:for="{{50}}"
+		 wx:key="index"
+		 hover-class="none"
+		 hover-stop-propagation="false"
+		>
+			{{ index }}
+		</view>
+	  <w-button type="info" bind:onClick="handleClose">关闭</w-button>
+	</scroll-view>
 </w-popup>
+```
+
+```javascript
+data: {
+  popup1: false,
+  popup2: false,
+  popup3: false,
+  popup4: false,
+  popup5: false,
+},
+handleClose() {
+  this.setData({
+    popup1: false,
+    popup2: false,
+    popup3: false,
+    popup4: false,
+    popup5: false,
+  });
+},
+handleClick1() {
+  this.setData({ popup1: true });
+},
+handleClick2() {
+  this.setData({ popup2: true });
+},
+handleClick3() {
+  this.setData({ popup3: true });
+},
+handleClick4() {
+  this.setData({ popup4: true });
+},
+handleClick5() {
+  this.setData({ popup5: true });
+},
+```
+
+```css
+.scroll-view-x {
+  height: 250px;
+  width: 100%;
+}
+
+.scroll-view-y {
+  height: 100%;
+}
 ```
 
 ### API
@@ -88,6 +190,7 @@
 
 | 事件名 | 说明 | 参数 |
 | ------ | ---- | ---- |
+| onClose | popup关闭时的回调 | ---- |
 
 
 #### slot

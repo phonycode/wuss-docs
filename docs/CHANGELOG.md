@@ -1,3 +1,48 @@
+## v 2.0.0
+
+#### 新增组件
+
+- 新增组件 Loading 加载动画
+- 新增组件 Marquee 垂直滚动视图
+- 新增组件 Confirm 确认框
+- 新增组件 Layout 布局
+- 新增组件 Number 步进器
+- 新增组件 CountUp 指数
+- 新增组件 Accordion 手风琴
+- 新增组件 AddressPicker 地区联动选择器
+- 新增组件 Range 区域选择
+- 新增组件 Card 卡片
+- 新增组件 Rater 星级评分
+- 新增组件 Segmented-control 分段器
+- 新增组件 ScrollableTabView 滚动视图
+- 新增组件 VCode 验证码
+- 新增组件 CellPicker 选择器(支持多级联动)
+- 新增组件 SearchBar 搜索栏
+
+
+#### 新增功能
+
+- 从2.x开始，所有组件将支持全局的样式覆盖，可在app。wxss进行全局覆盖
+- 目前 Button 支持了圆角属性
+- Checkbox组件支持了键值的方式传递选项组。Array-Keys形式的值。
+- Cell的slot插槽支持放置icon和图片
+
+#### 重构
+
+- 在2.x版本中，我们将重做了Calendar日历插件，优化了计算月份的算法。极大地提高了组件的性能，目前还支持多种模式：单选模式，日历预定模式，多选模式等。
+- 重构了Tabs组件并删除了tab组件，从2.x版本开始，tabs将不带tab container容器。
+
+#### 修复
+
+- 修复了Checkbox在Form表单提交时没初始化值的问题
+- 修正了Input组件的最大最小值出现的问题
+- 修复了ActionSheet使用loading时出现的bug
+- 统一了事件的命名规范，事件统一更正为 on[EventName] 形式.onClick,onChange等
+- 调整了Mask-Shadow的阴影度数
+- 修复了Cell-Group元素高度未被撑开的问题
+- 调整了Button组件的loading图标样式
+
+
 ## v 1.0.3
 
 - Checkbox组件支持了多种图标类型，用户可以自选进行配置

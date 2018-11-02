@@ -10,6 +10,12 @@
 }
 ```
 
+### 图片演示
+
+<img style="margin: 20px 0;" height="450px" src="../../resource/checkbox.jpg"/>
+
+
+
 ### 代码演示
 
 ```html
@@ -35,6 +41,86 @@
 	 bind:onChange="handleChange"
 	/>
 </w-cell-group>
+
+<w-pane desc="IconType" />
+<w-cell-group>
+	<w-checkbox
+   icon-type="circle"
+	 direction="right"
+	 options="{{ items1 }}"
+	 bind:onChange="handleChange"
+	/>
+  <w-checkbox
+   icon-type="box"
+	 direction="right"
+	 options="{{ items1 }}"
+	 bind:onChange="handleChange"
+	/>
+  <w-checkbox
+   icon-type="check"
+	 direction="right"
+	 options="{{ items1 }}"
+	 bind:onChange="handleChange"
+	/>
+</w-cell-group>
+
+
+<w-pane desc="ArrayKeys" />
+<w-cell-group>
+	<w-checkbox
+	 direction="right"
+	 options="{{ items3 }}"
+	 bind:onChange="handleChange"
+	/>
+</w-cell-group>
+```
+
+```javascript
+const MOCK_DATA = {
+  productName: 'iphone X max',
+  total: 1,
+  num: 642135,
+  id: 2143324234,
+  price: 12700.0,
+  desc: 'iphone is good',
+};
+data: {
+  items1Str: '',
+  items1: [
+    {
+      text: '复选框1',
+      ...MOCK_DATA,
+    },
+    {
+      text: '复选框2',
+      ...MOCK_DATA,
+    },
+    {
+      text: '复选框3',
+      ...MOCK_DATA,
+    },
+  ],
+  items2: [
+    {
+      text: '复选框1',
+      ...MOCK_DATA,
+    },
+    {
+      text: '复选框2',
+      ...MOCK_DATA,
+      disabled: true,
+    },
+    {
+      text: '复选框3',
+      ...MOCK_DATA,
+    },
+  ],
+  items3: ['测试1','测试2','测试3','测试4','测试5'],
+},
+handleChange(e) {
+  console.log(e.detail.checked)
+  this.setData({ items1Str: JSON.stringify(e.detail.checked) });
+},
 ```
 
 ### API
@@ -53,6 +139,7 @@
 
 | 事件名 | 说明 | 参数 |
 | ------ | ---- | ---- |
+| onChange | 勾选点击改变值时触发 | e.detail.value |
 
 
 #### slot
