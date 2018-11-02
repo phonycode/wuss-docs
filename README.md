@@ -2,4 +2,4 @@
 
 ### 访问
 
-[https://phonycode.github.io/wuss](https://phonycode.github.io/wuss)
+[https://phonycode.github.io/wuss-weapp](https://phonycode.github.io/wuss-weapp)
