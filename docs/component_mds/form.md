@@ -1,7 +1,5 @@
 # Form 表单
 
-日常表单
-
 ### 使用指南
 
 在 page.json 中引入组件
@@ -26,8 +24,8 @@
 ```html
 <w-pane title="Form" desc="表单" />
 <w-form
- bindsubmit="wussFormSubmit"
- bindreset="wussFormReset"
+ bind:onSubmit="wussFormSubmit"
+ bind:onReset="wussFormReset"
  isValidateBtn
 >
 	<w-cell-group>
@@ -54,6 +52,8 @@
     <w-validate rules="{{ isRequired }}">
       <w-cell-picker
         label="性别"
+        title="请选择性别"
+        placeholder="请选择性别"
         options="{{ [['男','女']] }}"
         name="sex"
       />
