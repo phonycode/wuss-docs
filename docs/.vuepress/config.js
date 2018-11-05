@@ -79,6 +79,7 @@ module.exports = {
           ['/component_mds/switch', 'Switch 开关'],
           ['/component_mds/radio', 'Radio 单选框'],
           ['/component_mds/checkbox', 'Checkbox 复选框'],
+          ['/component_mds/cell-picker', 'CellPicker 选择器'],
           ['/component_mds/address-picker', 'AddressPicker 地区联动选择器'],
           ['/component_mds/calendar', 'Calendar 日历选择器'],
           ['/component_mds/range', 'Range 区域选择'],
