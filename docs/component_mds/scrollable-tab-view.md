@@ -161,6 +161,11 @@ onReady: function () {
   overflow: auto;
 }
 
+.w-scrollable-tab-view-bar {
+  display: block;
+  overflow: hidden;
+}
+
 page {
   padding: 0;
   margin: 0;

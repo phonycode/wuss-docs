@@ -1,3 +1,27 @@
+## v 2.0.3
+
+#### 修复
+
+- 修复了SwiperOut组件在列表滚动时Y轴也会触发侧滑菜单的展开和收起问题 [#6101c7b](https://github.com/phonycode/wuss-weapp/commit/6101c7bb0e358cb5f2b8a9fef2a02578527d9119)
+- 修复了日历跨年出现的问题 [#22](https://github.com/phonycode/wuss-weapp/issues/22)
+
+
+
+## v 2.0.2
+
+#### 修复
+- 修复了按钮在loading状态下没禁用的问题 [#e77a2a6](https://github.com/phonycode/wuss-weapp/commit/e77a2a69fe42c57ea27536888b36fcce1d68fcf8)
+
+
+## v 2.0.1
+
+#### 修复
+
+- 调整了日历组件内边距样式  
+- 调整了Switch的层级过高问题
+- 修复了Form组件在没教研组件下无法提交的问题
+
+
 ## v 2.0.0
 
 #### 新增组件

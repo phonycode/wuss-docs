@@ -9,30 +9,36 @@
 1. 通过使用shell命令或git定位到当前小程序开发目录，然后使用npm或者yarn安装依赖。
 
 ```shell
-npm install --production wuss-weapp
+npm init && npm install --production wuss-weapp
 ```
 
 或者
 
 ```shell
-yarn add --production wuss-weapp
+yarn init && yarn add --production wuss-weapp
 ```
 
-2. 当依赖安装完成后即可在微信小程序开发者工具里点击 [工具] => [构建npm]，此时若出现弹窗则记得吧 “使用npm模块” 勾上，若无弹窗则待构建完成后在详情里面手动勾上 “使用npm模块”。
+2. 当依赖安装完成后即可在微信小程序开发者工具里点击 <span style="text-decoration: underline;color: red;font-weight: bold;">[工具] => [构建npm]</span>，此时若出现弹窗则记得吧 <span style="text-decoration: underline;color: red;font-weight: bold;">“使用npm模块”</span> 勾上，若无弹窗则待构建完成后在详情里面手动勾上<span style="text-decoration: underline;color: red;font-weight: bold;">“使用npm模块”</span>。
+<img style="margin: 20px 0;" height="350px" src="../resource/A7F74BA8-D0B4-4CF5-836C-7255977C4610.png"/>
+<img style="margin: 20px 0;" height="350px" src="../resource/6BE9A1C5-7CF5-47E8-ACF3-03D16D5B5780.png"/>
 
 
 3. 构建完成后即可添加需要的组件。在页面的 json 中配置：
 
 ```json
 "usingComponents": {
-  "w-button": "wuss-weapp/w-button/index"
+  "w-button": "wuss-weapp/w-button/index",
+  "w-toast": "wuss-weapp/w-toast/index",
+  "w-alert": "wuss-weapp/w-alert/index"
 }
 ```
 
 4. 在 wxml 中使用组件：
 
 ```html
-<w-button type="info" bind:click="buttonClick">这是一个按钮</w-button>
+<w-button type="info" bind:onClick="buttonClick">这是一个按钮</w-button>
+<w-toast id="wuss-toast" />
+<w-alert id="wuss-alert" />
 ```
 
 5. 在JavaScript中使用:
@@ -66,7 +72,7 @@ Toast.show({
 2. 在 wxml 中使用组件：
 
 ```html
-<w-button type="info" bind:click="buttonClick">这是一个按钮</w-button>
+<w-button type="info" bind:onClick="buttonClick">这是一个按钮</w-button>
 ```
 
 ### 预览所有组件
