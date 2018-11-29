@@ -219,12 +219,12 @@ wussFormReset(e) {
 ```html
 <w-form>
   使用mode 为mobile时，为校验手机号码
-  <w-validate rules="{{ { mode: ['mobile'] } }}"> ... </w-validate>
+  <w-validate rules="{{{ mode: ['mobile'] }}}"> ... </w-validate>
 
   required 必填
-  <w-validate rules="{{ { required: true } }}"> ... </w-validate>
+  <w-validate rules="{{{ required: true }}}"> ... </w-validate>
 
   regexp 自定义校验规则
-  <w-validate rules="{{ { regexp: /^1[34578]\d{9}$/ } }}"> ... </w-validate>
+  <w-validate rules="{{{ regexp: /^1[34578]\d{9}$/ }}}"> ... </w-validate>
 </w-form>
 ```
