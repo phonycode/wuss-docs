@@ -15,8 +15,6 @@
 <video style="margin: 20px 0;" height="450px" autoplay="true" loop="true" controls x5-playsinline="true" playsinline="true" webkit-playsinline="true" src="../../resource/tabs.mp4"
 />
 
-
-
 ### 代码演示
 
 ```html
@@ -231,9 +229,9 @@ onDisabled(e) {
 ```css
 .scroll-view_H {
   width: 100%;
-  white-space:nowrap;
-  overflow-x:auto;
-  overflow-y:hidden;
+  white-space: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
   height: 200px;
   display: flex;
   flex: 1;
@@ -259,7 +257,7 @@ onDisabled(e) {
 .bc_blue {
   background-color: blue;
 }
-.content{
+.content {
   padding: 20rpx 40rpx;
 }
 ```
@@ -268,33 +266,33 @@ onDisabled(e) {
 
 #### 属性
 
-
-| 属性 |    说明    |  类型  | 默认值       |
-| ---- | :--------: | :----: | -----:    |
-| options | tab列表的数据源 参数有 text,icon,iconColor,iconSize | array |  []  |
-| currentIndex |  初始化或者控制索引 | number |  0  |
-| transition | 是否开启过渡动画 | boolean |  false  |
-| line | 是否开启线条 | boolean |  true  |
-| duration | 设置动画时长 单位s | number |  0.2  |
-| lineSize | 线条长度大小 0 - 1 | number |  0.5  |
-| border | 开启线条 | string |  true  |
-| borderSize | 线条粗细 单位px | string |  2  |
-| borderColor | 线条颜色 | string |  #eeeeee  |
-| activeColor | 颜色 | string |  rgb(69, 143, 246)  |
-| textStyles | 文本样式 | string |  -  |
-| fixed | 是否开启定位 | boolean |  false  |
+| 属性         |                         说明                         |  类型   |            默认值 |
+| ------------ | :--------------------------------------------------: | :-----: | ----------------: |
+| options      | tab 列表的数据源 参数有 text,icon,iconColor,iconSize |  array  |                [] |
+| currentIndex |                  初始化或者控制索引                  | number  |                 0 |
+| transition   |                   是否开启过渡动画                   | boolean |             false |
+| line         |                     是否开启线条                     | boolean |              true |
+| duration     |                 设置动画时长 单位 s                  | number  |               0.2 |
+| lineSize     |                  线条长度大小 0 - 1                  | number  |               0.5 |
+| border       |                       开启线条                       | string  |              true |
+| borderSize   |                   线条粗细 单位 px                   | string  |                 2 |
+| borderColor  |                       线条颜色                       | string  |           #eeeeee |
+| activeColor  |                         颜色                         | string  | rgb(69, 143, 246) |
+| textStyles   |                       文本样式                       | string  |                 - |
+| fixed        |                     是否开启定位                     | boolean |             false |
 
 #### 事件
 
-| 事件名   | 说明               | 参数         |
-| -------- | ------------------ | ------------ |
+| 事件名   | 说明               | 参数     |
+| -------- | ------------------ | -------- |
 | onChange | tab 变化的时候触发 | e.detail |
-| disabled | 禁用的被点击时 | e.detail |
+| disabled | 禁用的被点击时     | e.detail |
 
 #### slot
 
-| 名称 | 说明            |
-| ---- | --------------- |
+| 名称 | 说明 |
+| ---- | ---- |
+
 
 #### 自定义类名
 

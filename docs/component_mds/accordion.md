@@ -15,8 +15,6 @@
 <video style="margin: 20px 0;" height="450px" autoplay="true" loop="true" controls x5-playsinline="true" playsinline="true" webkit-playsinline="true" src="../../resource/accordion.mp4"
 />
 
-
-
 ### 代码演示
 
 ```html
@@ -37,7 +35,7 @@
 	 title="Wuss WeAPP 3"
 	 key="我是被禁用的"
 	/>
-	<w-accordion title="Wuss WeAPP 4" key="{{ {say:'你好'} }}">
+	<w-accordion title="Wuss WeAPP 4" key="{{{say:'你好'}}}">
 		content 4
 	</w-accordion>
 </w-accordion-group>
@@ -61,7 +59,7 @@
 	 title="Wuss WeAPP 3"
 	 key="我是被禁用的"
 	/>
-	<w-accordion title="Wuss WeAPP 4" key="{{ {say:'你好'} }}">
+	<w-accordion title="Wuss WeAPP 4" key="{{{say:'你好'}}}">
 		content 4
 	</w-accordion>
 </w-accordion-group>
@@ -83,17 +81,16 @@ disabledClick(e) {
 
 #### 属性
 
-| 属性 |    说明    |  类型  | 默认值 |
-| ---- | :--------: | :----: | -----: |
-| key | 携带的数据 | string | null |
-| title | 标题 | string | - |
-| disabled | 是否开启禁用 | boolean | - |
+| 属性     |     说明     |  类型   | 默认值 |
+| -------- | :----------: | :-----: | -----: |
+| key      |  携带的数据  | string  |   null |
+| title    |     标题     | string  |      - |
+| disabled | 是否开启禁用 | boolean |      - |
 
 #### 事件
 
 | 事件名 | 说明 | 参数 |
 | ------ | ---- | ---- |
-
 
 
 #### slot
