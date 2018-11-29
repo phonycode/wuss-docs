@@ -10,6 +10,12 @@
 }
 ```
 
+### 图片演示
+
+<img style="margin: 20px 0;" height="450px" src="../../resource/tag.jpg"/>
+
+
+
 ### 代码演示
 
 ```html
@@ -29,8 +35,8 @@
 <w-tag color="geekblue">VIP</w-tag>
 <w-tag color="purple">VIP</w-tag>
 <w-tag closeable bindafterClose="afterClose" bindclose="close" visible="{{ visible }}">点击关闭</w-tag>
-<w-tag tagStyle="color:#fff;background-color:green;border-color:green;">琚志强：我绿吗</w-tag>
-<w-tag tagStyle="color:pink;border-color:pink;">老蔡:有点绿</w-tag>
+<w-tag tagStyle="color:#fff;background-color:green;border-color:green;">green</w-tag>
+<w-tag tagStyle="color:pink;border-color:pink;">pink</w-tag>
 
 <w-button type="info" bindclick="toggleTag">toggleTag</w-button>
 </view>

@@ -10,6 +10,11 @@
 }
 ```
 
+### 图片演示
+
+<img style="margin: 20px 0;" height="450px" src="../../resource/input.jpg"/>
+
+
 ### 代码演示
 
 ```html
@@ -30,6 +35,7 @@
 <w-cell-group>
 	<w-input
 	 extra="￥"
+	 type="digit"
 	 bindextraClick="extraClick"
 	 placeholder="00"
 	 label="金额"
@@ -40,7 +46,7 @@
 <w-pane desc="Format" />
 <w-cell-group>
 	<w-input
-	 type="phone"
+	 type="mobile"
 	 bindblur="iBlur"
 	 placeholder="请输入你的手机号"
 	 label="手机号"
@@ -77,7 +83,6 @@
 <w-pane desc="readOnly and disabled" />
 <w-cell-group>
 	<w-input
-	 disabled
 	 readOnly
 	 value="我是值只读"
 	 placeholder="只读"
@@ -101,7 +106,30 @@
 
 </w-cell-group>
 
-<w-button type="info" bind:click="handleFocus">click to Focus</w-button>
+<w-button type="info" bind:onClick="handleFocus">click to Focus</w-button>
+```
+
+```javascript
+data: {
+  focus: false,
+},
+handleFocus() {
+  this.setData({
+    focus: true,
+  });
+},
+iChange(e) {
+  console.log('我改变了', e.detail.value);
+},
+iFocus(e) {
+  console.log('我获取到焦点了', e.detail.value);
+},
+iBlur(e) {
+  console.log('我失去焦点了', e.detail.value);
+},
+extraClick(e) {
+  console.log('注释被点击了', e);
+},
 ```
 
 ### API

@@ -8,7 +8,7 @@
     >
       <img
         class="logo"
-        src="../../logo.png"
+        src="../logo.png"
       >
       <span
         ref="siteName"

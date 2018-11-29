@@ -10,6 +10,12 @@
 }
 ```
 
+### 视频演示
+
+<video style="margin: 20px 0;" height="450px" autoplay="true" loop="true" controls x5-playsinline="true" playsinline="true" webkit-playsinline="true" src="../../resource/steps.mp4"
+/>
+
+
 ### 代码演示
 
 ```html
@@ -22,7 +28,7 @@ current="{{ current }}"
 steps="{{ steps }}"
 />
 
-<w-button bind:click="setCurrent" size="small" type="info">下一步</w-button>
+<w-button bind:onClick="setCurrent" size="small" type="info">下一步</w-button>
 <w-pane desc="vertical" />
 <w-steps
 current="{{ current }}"

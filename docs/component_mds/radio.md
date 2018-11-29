@@ -10,6 +10,11 @@
 }
 ```
 
+### 图片演示
+
+<img style="margin: 20px 0;" height="450px" src="../../resource/radio.jpg"/>
+
+
 ### 代码演示
 
 ```html
@@ -37,10 +42,10 @@
  <w-radio w-model="{{ radioModel }}" options="{{ dataItems }}" bindonChange="handleonChange" />
 </w-cell-group>
 
-<w-button type="info" data-value="iphone" bind:click="handleChange">change 苹果</w-button>
-<w-button type="info" data-value="sanxing" bind:click="handleChange">change 三星</w-button>
-<w-button type="info" data-value="huawei" bind:click="handleChange">change 华为</w-button>
-<w-button type="info" data-value="oppo" bind:click="handleChange">change oppo音乐手机</w-button>
+<w-button type="info" data-value="iphone" bind:onClick="handleChange">change 苹果</w-button>
+<w-button type="info" data-value="sanxing" bind:onClick="handleChange">change 三星</w-button>
+<w-button type="info" data-value="huawei" bind:onClick="handleChange">change 华为</w-button>
+<w-button type="info" data-value="oppo" bind:onClick="handleChange">change oppo音乐手机</w-button>
 ```
 
 ### API
