@@ -225,6 +225,6 @@ wussFormReset(e) {
   <w-validate rules="{{{ required: true }}}"> ... </w-validate>
 
   regexp 自定义校验规则
-  <w-validate rules="{{{ regexp: ['^1[34578]\d{9}$'] }}}"> ... </w-validate>
+  <w-validate rules="{{{regexp:['1{2}']}}}"> ... </w-validate>
 </w-form>
 ```
