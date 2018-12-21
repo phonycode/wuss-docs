@@ -6,7 +6,7 @@
 
 ```json
 "usingComponents": {
-  "w-count-up": "path/to/w-count-up/index",
+  "w-count-up": "wuss-weapp/w-count-up/index",
 }
 ```
 
@@ -84,7 +84,7 @@
 ```javascript
 import {
   CountUp
-} from 'path/to/dist/index';
+} from 'wuss-weapp/dist/index';
 data: {
   count: 0,
   count2: 0,
@@ -118,7 +118,7 @@ onShow: function () {
 
 ### API
 
-#### 属性
+#### Attribute 属性
 
 | 属性 |    说明    |  类型  | 默认值 |
 | ---- | :--------: | :----: | -----: |
@@ -132,20 +132,20 @@ onShow: function () {
 , , , , , 
 
 
-#### 事件
+#### Event 事件
 
 | 事件名 | 说明 | 参数 |
 | ------ | ---- | ---- |
 
 
 
-#### slot
+#### Slot 插槽
 
 | 名称 | 说明 |
 | ---- | ---- |
 
 
-#### 自定义类名
+#### Class 自定义类名
 
 | 类名       | 说明         |
 | ---------- | ------------ |

@@ -6,7 +6,7 @@
 
 ```json
 "usingComponents": {
-  "w-tabs": "path/to/w-tabs/index",
+  "w-tabs": "wuss-weapp/w-tabs/index",
 }
 ```
 
@@ -77,20 +77,7 @@
 ```javascript
 data: {
   index: 2,
-  tabs1: [
-    {
-      text: '电器',
-    },
-    {
-      text: '数码',
-    },
-    {
-      text: '食品',
-    },
-    {
-      text: '手机',
-    },
-  ],
+  tabs1: ['电器', '数码', '食品', '手机'],
   tabs2: [
     {
       text: '微博',
@@ -118,93 +105,28 @@ data: {
     },
   ],
   tabs3: [
-    {
-      text: '英雄联盟',
-    },
-    {
-      text: '绝地求生',
-    },
-    {
-      text: 'DNF',
-    },
-    {
-      text: '炉石传说',
-    },
+    '英雄联盟',
+    '绝地求生',
+    'DNF',
+    '炉石传说'
   ],
   tabs4: [
-    {
-      text: 'tab1',
-    },
-    {
-      text: 'tab2',
-    },
-    {
-      text: 'tab3',
-    },
-    {
-      text: 'tab4',
-    },
+    'tab1',
+    'tab2',
+    'tab3',
+    'tab4'
   ],
   tabs5: [
-    {
-      text: 'tab1',
-    },
-    {
-      text: 'tab2',
-    },
-    {
-      text: 'tab3',
-    },
-    {
-      text: 'tab4',
-    },
-    {
-      text: 'tab5',
-    },
-    {
-      text: 'tab6',
-    },
-    {
-      text: 'tab7',
-    },
-    {
-      text: 'tab8',
-    },
-    {
-      text: 'tab9',
-    },
-    {
-      text: 'tab10',
-    },
-  ],
-  tabs5: [
-    {
-      text: 'tab1',
-    },
-    {
-      text: 'tab2',
-    },
-    {
-      text: 'tab3',
-    },
-    {
-      text: 'tab4',
-    },
-    {
-      text: 'tab5',
-    },
-    {
-      text: 'tab6',
-    },
-    {
-      text: 'tab7',
-    },
-    {
-      text: 'tab8',
-    },
-    {
-      text: 'tab9',
-    },
+    'tab1',
+    'tab2',
+    'tab3',
+    'tab4',
+    'tab5',
+    'tab6',
+    'tab7',
+    'tab8',
+    'tab9',
+    'tab10'
   ],
 },
 handleChange(e) {
@@ -264,7 +186,7 @@ onDisabled(e) {
 
 ### API
 
-#### 属性
+#### Attribute 属性
 
 | 属性         |                         说明                         |  类型   |            默认值 |
 | ------------ | :--------------------------------------------------: | :-----: | ----------------: |
@@ -281,20 +203,20 @@ onDisabled(e) {
 | textStyles   |                       文本样式                       | string  |                 - |
 | fixed        |                     是否开启定位                     | boolean |             false |
 
-#### 事件
+#### Event 事件
 
 | 事件名   | 说明               | 参数     |
 | -------- | ------------------ | -------- |
 | onChange | tab 变化的时候触发 | e.detail |
 | disabled | 禁用的被点击时     | e.detail |
 
-#### slot
+#### Slot 插槽
 
 | 名称 | 说明 |
 | ---- | ---- |
 
 
-#### 自定义类名
+#### Class 自定义类名
 
 | 类名       | 说明         |
 | ---------- | ------------ |

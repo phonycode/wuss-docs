@@ -6,7 +6,7 @@
 
 ```json
 "usingComponents": {
-  "w-qr-code": "path/to/w-qr-code/index",
+  "w-qr-code": "wuss-weapp/w-qr-code/index",
 }
 ```
 
@@ -51,26 +51,26 @@
 
 ### API
 
-#### 属性
+#### Attribute 属性
 
 | 属性 |    说明    |  类型  | 默认值 |
 | ---- | :--------: | :----: | -----: |
 | text | 二维码信息 | string |      - |
 | size | 二维码大小 | string |      - |
 
-#### 事件
+#### Event 事件
 
 | 事件名 | 说明 | 参数 |
 | ------ | ---- | ---- |
 
 
-#### slot
+#### Slot 插槽
 
 | 名称 | 说明 |
 | ---- | ---- |
 
 
-#### 自定义类名
+#### Class 自定义类名
 
 | 类名       | 说明         |
 | ---------- | ------------ |

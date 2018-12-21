@@ -6,16 +6,16 @@
 
 ```json
 "usingComponents": {
-"w-cell-group": "path/to/w-cell-group/index",
-"w-cell": "path/to/w-cell/index",
-"w-input": "path/to/w-input/index",
-"w-checkbox": "path/to/w-checkbox/index",
-"w-button": "path/to/w-button/index",
-"w-form": "path/to/w-form/index",
-"w-switch": "path/to/w-switch/index",
-"w-radio": "path/to/w-radio/index",
-"w-validate": "path/to/w-validate/index",
-"w-pane": "path/to/w-pane/index"
+"w-cell-group": "wuss-weapp/w-cell-group/index",
+"w-cell": "wuss-weapp/w-cell/index",
+"w-input": "wuss-weapp/w-input/index",
+"w-checkbox": "wuss-weapp/w-checkbox/index",
+"w-button": "wuss-weapp/w-button/index",
+"w-form": "wuss-weapp/w-form/index",
+"w-switch": "wuss-weapp/w-switch/index",
+"w-radio": "wuss-weapp/w-radio/index",
+"w-validate": "wuss-weapp/w-validate/index",
+"w-pane": "wuss-weapp/w-pane/index"
 }
 ```
 
@@ -161,26 +161,26 @@ wussFormReset(e) {
 
 ### API Form
 
-#### 属性
+#### Attribute 属性
 
 | 属性          | 说明                          |  类型   | 默认值 |
 | ------------- | ----------------------------- | :-----: | :----: |
 | isValidateBtn | 设置提交按钮跟随验证 disabled | boolean | false  |
 
-#### 事件
+#### Event 事件
 
 | 事件名 | 说明         | 参数     |
 | ------ | ------------ | -------- |
 | submit | 表单提交事件 | e.detail |
 | reset  | 表单重置事件 | e.detail |
 
-#### slot
+#### Slot 插槽
 
 | 名称 | 说明     |
 | ---- | -------- |
 | slot | 表单组件 |
 
-#### 自定义类名
+#### Class 自定义类名
 
 | 类名       | 说明         |
 | ---------- | ------------ |
@@ -190,9 +190,9 @@ wussFormReset(e) {
 
 用于表单组件的数据校验，内置了常用规则。 用户也可自定义规则进行校验。
 
-##### 属性
+##### Attribute 属性
 
-| 属性                   | 说明                       |  类型  | 默认值                                         |
+| 属性                   | 说明                       |  类型  | 示例                                         |
 | ---------------------- | -------------------------- | :----: | ---------------------------------------------- |
 | rules                  | 校验规则对象               | object | { required: { value: true, message: '必填' } } |
 | rules.required.value   | 校验规则的值               |  any   | -                                              |

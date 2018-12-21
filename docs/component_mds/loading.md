@@ -6,7 +6,7 @@
 
 ```json
 "usingComponents": {
-  "w-loading": "path/to/w-loading/index",
+  "w-loading": "wuss-weapp/w-loading/index",
 }
 ```
 
@@ -76,7 +76,7 @@ handleClick2() {
 
 ### API
 
-#### 属性
+#### Attribute 属性
 
 | 属性 |    说明    |  类型  | 默认值 |
 | ---- | :--------: | :----: | -----: |
@@ -85,20 +85,20 @@ handleClick2() {
 | timeout | 指定时间段内关闭loading | number | - |
 | hide | loading消失后的回调 | function | - |
 
-#### 事件
+#### Event 事件
 
 | 事件名 | 说明 | 参数 |
 | ------ | ---- | ---- |
 
 
 
-#### slot
+#### Slot 插槽
 
 | 名称 | 说明 |
 | ---- | ---- |
 
 
-#### 自定义类名
+#### Class 自定义类名
 
 | 类名       | 说明         |
 | ---------- | ------------ |

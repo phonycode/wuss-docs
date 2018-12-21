@@ -8,8 +8,8 @@
 
 ```json
 "usingComponents": {
-  "w-indicator":"path/to/w-activity-indicator/index",
-  "w-pane":"path/to/w-pane/index"
+  "w-indicator":"wuss-weapp/w-activity-indicator/index",
+  "w-pane":"wuss-weapp/w-pane/index"
 }
 ```
 
@@ -81,7 +81,7 @@
 
 ### API
 
-#### 属性
+#### Attribute 属性
 
 | 属性 |    说明    |  类型  | 默认值 |
 | ---- | :--------: | :----: | -----: |
@@ -93,7 +93,7 @@
 
 
 
-#### 自定义类名
+#### Class 自定义类名
 
 | 类名                    | 说明         |
 | ----------------------- | ------------ |

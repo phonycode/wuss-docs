@@ -6,7 +6,7 @@
 
 ```json
 "usingComponents": {
-  "w-scrollable-tab-view": "path/to/w-scrollable-tab-view/index",
+  "w-scrollable-tab-view": "wuss-weapp/w-scrollable-tab-view/index",
 }
 ```
 
@@ -78,7 +78,7 @@
 
 ### API
 
-#### 属性
+#### Attribute 属性
 
 | 属性 |    说明    |  类型  | 默认值 |
 | ---- | :--------: | :----: | -----: |
@@ -92,20 +92,20 @@
 | margin | 每个iconfont之间的外边距 | number | - |
 | fontSize | iconfont大小 | number | - |
 
-#### 事件
+#### Event 事件
 
 | 事件名 | 说明 | 参数 |
 | ------ | ---- | ---- |
 | onChange | 点击时触发的回调 | e.detail.value |
 
-#### slot
+#### Slot 插槽
 
 | 名称 | 说明 |
 | ---- | ---- |
 | slot | 设置为options对应字段containerName的slot名字 |
 
 
-#### 自定义类名
+#### Class 自定义类名
 
 | 类名       | 说明         |
 | ---------- | ------------ |

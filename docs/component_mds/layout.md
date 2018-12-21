@@ -6,8 +6,8 @@
 
 ```json
 "usingComponents": {
-  "w-row": "path/to/w-row/index",
-  "w-col": "path/to/w-col/index",
+  "w-row": "wuss-weapp/w-row/index",
+  "w-col": "wuss-weapp/w-col/index",
 }
 ```
 
@@ -147,7 +147,7 @@
 
 ### API
 
-#### 属性
+#### Attribute 属性
 
 ##### Col
 | 属性 |    说明    |  类型  | 默认值 |
@@ -163,20 +163,20 @@
 | gutter | 栅格间隔	 | number | 0 |
 | direction | 布局排列方式：[left/right]	 | string | left |
 
-#### 事件
+#### Event 事件
 
 | 事件名 | 说明 | 参数 |
 | ------ | ---- | ---- |
 
 
 
-#### slot
+#### Slot 插槽
 
 | 名称 | 说明 |
 | ---- | ---- |
 
 
-#### 自定义类名
+#### Class 自定义类名
 
 | 类名       | 说明         |
 | ---------- | ------------ |

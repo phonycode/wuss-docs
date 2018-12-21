@@ -1,3 +1,58 @@
+## v 2.0.7
+
+#### 修复
+
+- 修复了w-cell-picker 在移动端使用无过渡动画问题[#e9f913c](https://github.com/phonycode/wuss-weapp/commits/master)
+
+- 修复了swiper-out组件在拖动时双击两下不会回到原位[#e9f913c]  (https://github.com/phonycode/wuss-weapp/commits/master)
+
+
+## v 2.0.6
+
+#### 修复
+
+- 修复了w-activity-indicator 组件display显示方式为行内块.[#0be7a3a](https://github.com/phonycode/wuss-weapp/commit/7a66c6112572b1096a40fe6f6996f5e973cd7227)
+
+- 修复了w-cell 右侧link箭头过小的问题.[#6e60899](https://github.com/phonycode/wuss-weapp/commit/1fed7e5ecea7d1bbaad51ecb2ef9a5d6ef047e09) 
+
+- 修复了w-loading z-index在一些组件中显示层级过低现象[#79b3d70](https://github.com/phonycode/wuss-weapp/commit/f78168d4a5d4289443485005746b5fffd2443fe9)
+
+- 修复了w-pane slot=desc 无法显示.[#f78168d](https://github.com/phonycode/wuss-weapp/commit/b42af2cf5972a26349795ed3633904d83fd7ae95)
+
+- w-cell-picker
+  - 1.修复有时无法选中的现象[]()
+  - 2.在拾取器视图第二个选项渲染过程中无法重新计算高度问题的问题[#9aa5678](https://github.com/phonycode/wuss-weapp/commit/05e4ee02600c5349b8735daf21340a014f23bbbe)
+  - 3.优化了滚动条件判断。
+  - 4.现在支持单例模式array-keys数组键或array-object数组对象数组进行使用， 例: [a,b,c,d,e] or  [{}, {}, {}, {}]。
+  - 5.修复了初始化默认值的问题.
+  - 6.支持了表单校验模块，可配合validate,form使用.
+
+
+
+## v 2.0.5
+
+#### 支持
+
+- w-popup组件的position属性支持了main值,可使用[left,right,top,bottom,main]值。[#8e79ac0](https://github.com/phonycode/wuss-weapp/commit/7eafe9d8340c255f89d9df28a1f71c09657649df)
+
+#### 修复
+
+- 修复了w-action-sheet 组件无法触发分享功能. 现在可指定openType属性来触发对应的功能，详见官方文档button的openType[#743b386](https://github.com/phonycode/wuss-weapp/commit/8e79ac0a1f13549b029aac86db3d6a4790308b95)
+
+
+## v 2.0.4
+
+#### 支持
+
+- 现在w-tabs组件的options支持传入Array-Keys键值形式的值。[#b93db36](https://github.com/phonycode/wuss-weapp/commit/80d3ce1903bea5be3efc958b05e3957ec22115ab)
+
+- validate组件支持了手机最新号码的正则表达式 [#76543dc](https://github.com/phonycode/wuss-weapp/commit/743b386f975feee408da401456d4278db3fc7522)
+
+#### 重构
+
+- 在2.0.4版本，我们重写了ScrollableTabView组件，现在它将支持传入Array-Keys键值形式的值。同时优化了代码，提升了渲染性能。让它使用起来更加方便。[#55cfcd1](https://github.com/phonycode/wuss-weapp/commit/b93db364be8af630f2465a4a5f714c6ab61aece2)
+
+
 ## v 2.0.3
 
 #### 修复

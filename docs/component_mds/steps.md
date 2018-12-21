@@ -6,7 +6,7 @@
 
 ```json
 "usingComponents": {
-  "w-steps": "path/to/w-steps/index",
+  "w-steps": "wuss-weapp/w-steps/index",
 }
 ```
 
@@ -44,7 +44,7 @@ direction="vertical"
 
 ### API
 
-#### 属性
+#### Attribute 属性
 
 | 属性      |                说明                |  类型  |    默认值 |
 | --------- | :--------------------------------: | :----: | --------: |
@@ -53,19 +53,19 @@ direction="vertical"
 | direction | 横向和竖向'vertical'\|'horizontal' | string |         - |
 | current   |   指定当前步骤，从 0 开始记数。    | number | undefined |
 
-#### 事件
+#### Event 事件
 
 | 事件名 | 说明 | 参数 |
 | ------ | ---- | ---- |
 
 
-#### slot
+#### Slot 插槽
 
 | 名称 | 说明 |
 | ---- | ---- |
 
 
-#### 自定义类名
+#### Class 自定义类名
 
 | 类名       | 说明         |
 | ---------- | ------------ |

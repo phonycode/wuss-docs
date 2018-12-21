@@ -10,7 +10,7 @@
 
 ```json
 "usingComponents": {
-  "w-button": "path/to/w-button/index",
+  "w-button": "wuss-weapp/w-button/index",
 }
 ```
 
@@ -204,7 +204,7 @@
 
 ### API
 
-#### 属性
+#### Attribute 属性
 
 
 | 属性 |    说明    |  类型  | 默认值 |
@@ -228,7 +228,7 @@
 | inline | 行内块按钮 | boolean | false |
 | circle | 按钮显示为椭圆形 | boolean | false |
 
-#### 事件
+#### Event 事件
 
 | 事件名     | 说明                                   | 参数 |
 | ---------- | -------------------------------------- | ---- |
@@ -236,13 +236,13 @@
 | onError | 点击操作失败时触发,例如openType为getUserInfo时若授权失败则进入回调 | -    |
 
 
-#### slot
+#### Slot 插槽
 
 | 名称 | 说明       |
 | ---- | ---------- |
 | slot    | 自定义内容 |
 
-#### 自定义类名
+#### Class 自定义类名
 
 | 类名                    | 说明                  |
 | ----------------------- | --------------------- |

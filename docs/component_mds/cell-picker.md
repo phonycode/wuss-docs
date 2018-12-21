@@ -6,7 +6,7 @@
 
 ```json
 "usingComponents": {
-  "w-cell-picker": "path/to/w-cell-picker/index",
+  "w-cell-picker": "wuss-weapp/w-cell-picker/index",
 }
 ```
 
@@ -246,7 +246,7 @@ data: {
 
 ### API
 
-#### 属性
+#### Attribute 属性
 
 | 属性         | 说明 |  类型   | 默认值 |
 | ------------ | :--: | :-----: | -----: |
@@ -260,7 +260,7 @@ data: {
 | showValue      |  是否用value而不是key展示    | Boolean | false |
 | defaultKey      |  onChange和onSelect事件返回的值是何种格式 [value,value...] [key,key,...]    | String | 'value' |
 
-#### 事件
+#### Event 事件
 
 | 事件名 | 说明 | 参数 |
 | ------ | ---- | ---- |
@@ -268,13 +268,13 @@ data: {
 | onSelect      |  点击确认时触发    | e.detail.value |
 
 
-#### slot
+#### Slot 插槽
 
 | 名称 | 说明 |
 | ---- | ---- |
 
 
-#### 自定义类名
+#### Class 自定义类名
 
 | 类名       | 说明         |
 | ---------- | ------------ |

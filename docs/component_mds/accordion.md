@@ -6,7 +6,7 @@
 
 ```json
 "usingComponents": {
-  "w-accordion": "path/to/w-accordion/index",
+  "w-accordion": "wuss-weapp/w-accordion/index",
 }
 ```
 
@@ -79,7 +79,7 @@ disabledClick(e) {
 
 ### API
 
-#### 属性
+#### Attribute 属性
 
 | 属性     |     说明     |  类型   | 默认值 |
 | -------- | :----------: | :-----: | -----: |
@@ -87,19 +87,19 @@ disabledClick(e) {
 | title    |     标题     | string  |      - |
 | disabled | 是否开启禁用 | boolean |      - |
 
-#### 事件
+#### Event 事件
 
 | 事件名 | 说明 | 参数 |
 | ------ | ---- | ---- |
 
 
-#### slot
+#### Slot 插槽
 
 | 名称 | 说明 |
 | ---- | ---- |
 
 
-#### 自定义类名
+#### Class 自定义类名
 
 | 类名       | 说明         |
 | ---------- | ------------ |

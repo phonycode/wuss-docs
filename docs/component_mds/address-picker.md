@@ -6,7 +6,7 @@
 
 ```json
 "usingComponents": {
-  "w-address-picker": "path/to/w-address-picker/index",
+  "w-address-picker": "wuss-weapp/w-address-picker/index",
 }
 ```
 
@@ -59,7 +59,7 @@ handleChange(e) {
 
 ### API
 
-#### 属性
+#### Attribute 属性
 
 | 属性 |    说明    |  类型  | 默认值 |
 | ---- | :--------: | :----: | -----: |
@@ -71,7 +71,7 @@ handleChange(e) {
 | disabled | 禁用 | boolean | false |
 | customItem | 可为每一列的顶部添加一个自定义的项 | string | - |
 
-#### 事件
+#### Event 事件
 
 | 事件名 | 说明 | 参数 |
 | ------ | ---- | ---- |
@@ -80,13 +80,13 @@ handleChange(e) {
 
 
 
-#### slot
+#### Slot 插槽
 
 | 名称 | 说明 |
 | ---- | ---- |
 
 
-#### 自定义类名
+#### Class 自定义类名
 
 | 类名       | 说明         |
 | ---------- | ------------ |

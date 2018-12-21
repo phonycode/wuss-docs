@@ -6,9 +6,9 @@
 
 ```json
 "usingComponents": {
-  "w-pane":"path/to/w-pane/index",
-  "w-button":"path/to/w-button/index",
-  "w-action-sheet":"path/to/w-action-sheet/index"
+  "w-pane":"wuss-weapp/w-pane/index",
+  "w-button":"wuss-weapp/w-button/index",
+  "w-action-sheet":"wuss-weapp/w-action-sheet/index"
 }
 ```
 
@@ -30,20 +30,14 @@
  data-key="1"
  bind:onClick="handleShow"
 >
-	{{
-	visible1
-	?
-	'show'
-	:
-	'hide'
-	}}
+	{{ visible1 ? 'show' : 'hide' }}
 </w-button>
 <w-action-sheet
  data-key="1"
  visible="{{ visible1 }}"
  options="{{ items1 }}"
  bind:onChange="handleClick"
- bind:close="handleClose"
+ bind:onClose="handleClose"
 />
 
 <w-pane desc="Icon" />
@@ -52,20 +46,14 @@
  data-key="2"
  bind:onClick="handleShow"
 >
-	{{
-	visible2
-	?
-	'show'
-	:
-	'hide'
-	}}
+	{{ visible2 ? 'show' : 'hide' }}
 </w-button>
 <w-action-sheet
  data-key="2"
  visible="{{ visible2 }}"
  options="{{ items2 }}"
  bind:onChange="handleClick"
- bind:close="handleClose"
+ bind:onClose="handleClose"
 />
 
 <w-pane desc="MaskCancel = False" />
@@ -74,13 +62,7 @@
  data-key="3"
  bind:onClick="handleShow"
 >
-	{{
-	visible3
-	?
-	'show'
-	:
-	'hide'
-	}}
+	{{ visible3 ? 'show' : 'hide' }}
 </w-button>
 <w-action-sheet
  maskCancel="{{ false }}"
@@ -88,7 +70,7 @@
  visible="{{ visible3 }}"
  options="{{ items3 }}"
  bind:onChange="handleClick"
- bind:close="handleClose"
+ bind:onClose="handleClose"
 />
 
 <w-pane desc="ShowCancel = False" />
@@ -97,13 +79,7 @@
  data-key="4"
  bind:onClick="handleShow"
 >
-	{{
-	visible4
-	?
-	'show'
-	:
-	'hide'
-	}}
+	{{ visible4 ? 'show' : 'hide' }}
 </w-button>
 <w-action-sheet
  showCancel="{{ false }}"
@@ -111,7 +87,7 @@
  visible="{{ visible4 }}"
  options="{{ items4 }}"
  bind:onChange="handleClick"
- bind:close="handleClose"
+ bind:onClose="handleClose"
 />
 
 <w-pane desc="CancelText = 退出" />
@@ -120,13 +96,7 @@
  data-key="5"
  bind:onClick="handleShow"
 >
-	{{
-	visible5
-	?
-	'show'
-	:
-	'hide'
-	}}
+	{{ visible5 ? 'show' : 'hide' }}
 </w-button>
 <w-action-sheet
  cancelText="退出"
@@ -134,7 +104,7 @@
  visible="{{ visible5 }}"
  options="{{ items5 }}"
  bind:onChange="handleClick"
- bind:close="handleClose"
+ bind:onClose="handleClose"
 />
 
 <w-pane desc="Loading" />
@@ -143,13 +113,7 @@
  data-key="6"
  bind:onClick="handleShow"
 >
-	{{
-	visible6
-	?
-	'show'
-	:
-	'hide'
-	}}
+	{{ visible6 ? 'show' : 'hide' }}
 </w-button>
 <w-action-sheet
  cancelText="退出"
@@ -157,12 +121,12 @@
  visible="{{ visible6 }}"
  options="{{ items6 }}"
  bind:onChange="handleClick"
- bind:close="handleClose"
+ bind:onClose="handleClose"
 />
 
 <w-pane desc="插件手动调用" />
 <w-button type="info" bind:onClick="handleClick2">ActionSheet.show()</w-button>
-<w-action-sheet id="wuss-actionsheet" options="{{ items6 }}" bind:onChange="handleClick" bind:close="handleClose" />
+<w-action-sheet id="wuss-actionsheet" options="{{ items6 }}" bind:onChange="handleClick" bind:onClose="handleClose" />
 ```
 
 ```javascript
@@ -172,10 +136,12 @@ data: {
     {
       text: '分享给朋友',
       type: 'share',
+      openType: 'share',
     },
     {
       text: '分享到朋友圈',
       type: 'shareTimeLine',
+      openType: 'share',
     },
   ],
   items2: [
@@ -183,11 +149,13 @@ data: {
       text: '分享给朋友',
       type: 'share',
       icon: 'forward-o',
+      openType: 'share',
     },
     {
       text: '分享到朋友圈',
       type: 'shareTimeLine',
       icon: 'share',
+      openType: 'share',
     },
   ],
   items3: [
@@ -195,11 +163,13 @@ data: {
       text: '分享给朋友',
       type: 'share',
       icon: 'forward-o',
+      openType: 'share',
     },
     {
       text: '分享到朋友圈',
       type: 'shareTimeLine',
       icon: 'share',
+      openType: 'share',
     },
   ],
   items4: [
@@ -207,11 +177,13 @@ data: {
       text: '分享给朋友',
       type: 'share',
       icon: 'forward-o',
+      openType: 'share',
     },
     {
       text: '分享到朋友圈',
       type: 'shareTimeLine',
       icon: 'share',
+      openType: 'share',
     },
   ],
   items5: [
@@ -219,21 +191,25 @@ data: {
       text: '分享给朋友',
       type: 'share',
       icon: 'forward-o',
+      openType: 'share',
     },
     {
       text: '分享到朋友圈',
       type: 'shareTimeLine',
       icon: 'share',
+      openType: 'share',
     },
   ],
   items6: [
     {
       text: '分享给朋友',
       type: 'share',
+      openType: 'share',
     },
     {
       text: '分享到朋友圈',
       type: 'shareTimeLine',
+      openType: 'share',
     },
   ],
 },
@@ -271,38 +247,47 @@ handleShow(e) {
 },
 handleClick2() {
   ActionSheet.show({
-    items: [{text: 'ActionSheet.hide()',type: 'hide'}],
+    options: [{text: 'ActionSheet.hide()',type: 'hide'}],
   })
 },
+onShareAppMessage: function (res) {
+  if (res.from === 'button') {
+    // 来自页面内转发按钮
+    console.log(res.target)
+  }
+  return {
+    title: '自定义转发标题',
+    path: '/page/user?id=123'
+  }
+}
 ```
 
 ### API
 
-#### 属性
+#### Attribute 属性
 
-| 属性       |        说明        |  类型   | 默认值 |
-| ---------- | :----------------: | :-----: | -----: |
-| visible    |      是否可见      | boolean |  false |
-| options      | 当前传出的菜单列表 |  array  |     [] |
-| maskCancel | 点击遮罩是否可关闭 | boolean |  false |
-| showCancel |  是否展示取消按钮  | boolean |  false |
-| cancelText |    取消按钮文字    | string  |   取消 |
+| 属性 |    说明    |  类型  | 默认值 |
+| ---- | :--------: | :----: | -----: |
+| visible | 是否可见 | boolean | false |
+| options | 当前传出的菜单列表    item属性有color,openType,loading,icon,iconSize,disabled,iconColor,text | array | []  |
+| maskCancel | 点击遮罩是否可关闭 | boolean | false |
+| showCancel | 是否展示取消按钮 | boolean | false |
+| cancelText | 取消按钮文字 | string | 取消 |
 
-#### 事件
+#### Event 事件
 
 | 事件名 | 说明           | 参数 |
 | ------ | -------------- | ---- |
 | onClose  | 取消回调       | ---- |
-| onClick  | 菜单被点击回调 | e.detail.value |
 | onChange  | 值被改变时触发 |  e.detail.value |
 
-#### slot
+#### Slot 插槽
 
 | 名称   | 说明     |
 | ------ | -------- |
 | header | 头部插槽 |
 
-#### 自定义类名
+#### Class 自定义类名
 
 | 类名       | 说明         |
 | ---------- | ------------ |

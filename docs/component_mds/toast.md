@@ -6,7 +6,7 @@
 
 ```json
 "usingComponents": {
-  "w-toast": "path/to/w-toast/index",
+  "w-toast": "wuss-weapp/w-toast/index",
 }
 ```
 
@@ -40,7 +40,7 @@
 ```
 
 ```js
-import { Toast } from 'path/to/index';
+import { Toast } from 'wuss-weapp/index';
 Page({
   top() {
     Toast.show({
@@ -94,7 +94,7 @@ Page({
 
 ### API
 
-#### 事件
+#### Event 事件
 
 | 事件名 | 说明              | 参数 |
 | ------ | ----------------- | ---- |
@@ -112,7 +112,7 @@ Page({
 | color    |                 icon 颜色                  | string  | #ffffff |
 | size     |                 icon 大小                  | number  |     100 |
 
-#### 自定义类名
+#### Class 自定义类名
 
 | 类名       | 说明         |
 | ---------- | ------------ |

@@ -6,7 +6,7 @@
 
 ```json
 "usingComponents": {
-  "w-popup": "path/to/w-popup/index",
+  "w-popup": "wuss-weapp/w-popup/index",
 }
 ```
 
@@ -29,7 +29,7 @@
  visible="{{ popup1 }}"
  position="top"
  height="250px"
- bind:close="handleClose"
+ bind:onClose="handleClose"
 >
 	<scroll-view scroll-y class="scroll-view-x">
 		<view
@@ -48,7 +48,7 @@
  visible="{{ popup2 }}"
  position="bottom"
  height="250px"
- bind:close="handleClose"
+ bind:onClose="handleClose"
 >
 	<scroll-view scroll-y class="scroll-view-x">
 		<view
@@ -66,7 +66,7 @@
 <w-popup
  visible="{{ popup3 }}"
  position="left"
- bind:close="handleClose"
+ bind:onClose="handleClose"
 >
 	<scroll-view scroll-y class="scroll-view-y">
 		<view
@@ -81,10 +81,27 @@
 	</scroll-view>
 </w-popup>
 <w-button type="info" bind:onClick="handleClick4">Right</w-button>
+
+<w-popup
+ visible="{{ popup6 }}"
+ position="main"
+ height="45%"
+ width="72%"
+ padding="0"
+ bind:onClose="handleClose"
+ wuss-class="wuss-popup"
+>
+  <view class="demo-popup-6">
+    <w-qr-code size="200" text="hello world" />
+    <w-icon bindtap="handleClose" type="close" color="#999999" wuss-class="w-icon" />
+  </view>
+</w-popup>
+<w-button type="info" bind:onClick="handleClick6">Main</w-button>
+
 <w-popup
  visible="{{ popup4 }}"
  position="right"
- bind:close="handleClose"
+ bind:onClose="handleClose"
 >
 	<scroll-view scroll-y class="scroll-view-y">
 		<view
@@ -103,11 +120,11 @@
 
 <w-button type="info" bind:onClick="handleClick5">Info</w-button>
 <w-popup
- mask-cancel="{{ false }}"
+ maskCancel="{{ false }}"
  visible="{{ popup5 }}"
  position="bottom"
  height="250px"
- bind:close="handleClose"
+ bind:onClose="handleClose"
 >
 	<scroll-view scroll-y class="scroll-view-x">
 		<view
@@ -117,7 +134,7 @@
 		 hover-class="none"
 		 hover-stop-propagation="false"
 		>
-			{{ index }}
+			下拉点击关闭按钮{{ index }}
 		</view>
 	  <w-button type="info" bind:onClick="handleClose">关闭</w-button>
 	</scroll-view>
@@ -131,6 +148,7 @@ data: {
   popup3: false,
   popup4: false,
   popup5: false,
+  popup6: false,
 },
 handleClose() {
   this.setData({
@@ -139,6 +157,7 @@ handleClose() {
     popup3: false,
     popup4: false,
     popup5: false,
+    popup6: false,
   });
 },
 handleClick1() {
@@ -156,6 +175,9 @@ handleClick4() {
 handleClick5() {
   this.setData({ popup5: true });
 },
+handleClick6() {
+  this.setData({ popup6: true });
+},
 ```
 
 ```css
@@ -171,12 +193,12 @@ handleClick5() {
 
 ### API
 
-#### 属性
+#### Attribute 属性
 
 | 属性       |                      说明                      |  类型   | 默认值 |
 | ---------- | :--------------------------------------------: | :-----: | -----: |
 | visible    |                  组件是否可见                  | boolean |  false |
-| position   |       弹出位置,可选值:leftrighttopbottom       | string  |      - |
+| position   |       弹出位置,可选值:[left,right,top,bottom,main]       | string  |      - |
 | mask       |                 是否开启遮罩层                 | boolean |  false |
 | maskIndex  |             当前组件的 z-index 值              | number  |      - |
 | width      | 内容区的宽度，当 type 的值为 left,right 时生效 | string  |      - |
@@ -186,20 +208,20 @@ handleClick5() {
 | zIndex     |                                                | number  |      - |
 | maskCancel |               点击遮罩层可否关闭               | boolean |  false |
 
-#### 事件
+#### Event 事件
 
 | 事件名 | 说明 | 参数 |
 | ------ | ---- | ---- |
 | onClose | popup关闭时的回调 | ---- |
 
 
-#### slot
+#### Slot 插槽
 
 | 名称 | 说明 |
 | ---- | ---- |
 
 
-#### 自定义类名
+#### Class 自定义类名
 
 | 类名               | 说明 |
 | ------------------ | ---- |

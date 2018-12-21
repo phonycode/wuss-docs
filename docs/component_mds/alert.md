@@ -8,9 +8,9 @@
 
 ```json
 "usingComponents": {
-   "w-alert":"path/to/w-alert/index",
-    "w-button":"path/to/w-button/index",
-    "w-pane":"path/to/w-pane/index"
+   "w-alert":"wuss-weapp/w-alert/index",
+    "w-button":"wuss-weapp/w-button/index",
+    "w-pane":"wuss-weapp/w-pane/index"
 }
 ```
 
@@ -68,7 +68,7 @@ handleClick3() {
 
 ### API
 
-#### 属性
+#### Attribute 属性
 
 | 属性 | 说明 | 类型 | 默认值 |
 | ---- | :--: | :--: | -----: |
@@ -78,7 +78,7 @@ handleClick3() {
 | buttonColor | 按钮颜色 |   string   | #ff9900 |
 | confirm | 确定按钮回调 |   function   | - |
 
-#### 自定义类名
+#### Class 自定义类名
 
 | 类名       | 说明         |
 | ---------- | ------------ |

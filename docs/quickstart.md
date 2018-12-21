@@ -2,6 +2,10 @@
 
 在开始使用 Wuss Weapp 之前，你需要先阅读 [微信小程序自定义组件](https://developers.weixin.qq.com/miniprogram/dev/framework/custom-component/) 的相关文档。
 
+### Wuss Weapp 官方交流群
+
+QQ 群号 787275772
+
 ### 如何使用
 
 #### 方法一 [推荐] (通过npm安装依赖并在小程序构建npm模块)

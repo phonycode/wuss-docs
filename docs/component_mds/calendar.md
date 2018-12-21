@@ -6,7 +6,7 @@
 
 ```json
 "usingComponents": {
-  "w-calendar": "path/to/w-calendar/index",
+  "w-calendar": "wuss-weapp/w-calendar/index",
 }
 ```
 
@@ -29,7 +29,7 @@
 
 ### API
 
-#### 属性
+#### Attribute 属性
 
 | 属性         | 说明 |  类型   | 默认值 |
 | ------------ | :--: | :-----: | -----: |
@@ -44,7 +44,7 @@
 | initalMonths      |  初始渲染月份    | Number | 6 |
 | disabledDate      |  禁用的日期    | Object | {} |
 
-#### 事件
+#### Event 事件
 
 | 事件名 | 说明 | 参数 |
 | ------ | ---- | ---- |
@@ -53,13 +53,13 @@
 | cancel      |  取消后的回调    | - |
 
 
-#### slot
+#### Slot 插槽
 
 | 名称 | 说明 |
 | ---- | ---- |
 
 
-#### 自定义类名
+#### Class 自定义类名
 
 | 类名       | 说明         |
 | ---------- | ------------ |

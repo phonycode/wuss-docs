@@ -6,8 +6,8 @@
 
 ```json
 "usingComponents": {
-  "w-marquee": "path/to/w-marquee/index",
-  "w-marquee-item": "path/to/w-marquee-item/index",
+  "w-marquee": "wuss-weapp/w-marquee/index",
+  "w-marquee-item": "wuss-weapp/w-marquee-item/index",
 }
 ```
 
@@ -164,7 +164,7 @@ page {
 
 ### API
 
-#### 属性
+#### Attribute 属性
 
 | 属性 |    说明    |  类型  | 默认值 |
 | ---- | :--------: | :----: | -----: |
@@ -173,7 +173,7 @@ page {
 | itemHeight | 每个子节点(w-marquee-item)的高度 | number | 44 |
 | currentIndex | 设置当前的激活索引 | number | 0 |
 
-#### 事件
+#### Event 事件
 
 | 事件名 | 说明 | 参数 |
 | ------ | ---- | ---- |
@@ -181,14 +181,14 @@ page {
 
 
 
-#### slot
+#### Slot 插槽
 
 | 名称 | 说明 |
 | ---- | ---- |
 | marquee-item | marquee的滚动子节点 |
 
 
-#### 自定义类名
+#### Class 自定义类名
 
 | 类名       | 说明         |
 | ---------- | ------------ |

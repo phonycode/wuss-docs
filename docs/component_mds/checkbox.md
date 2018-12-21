@@ -6,7 +6,7 @@
 
 ```json
 "usingComponents": {
-  "w-checkbox": "path/to/w-checkbox/index",
+  "w-checkbox": "wuss-weapp/w-checkbox/index",
 }
 ```
 
@@ -125,7 +125,7 @@ handleChange(e) {
 
 ### API
 
-#### 属性
+#### Attribute 属性
 
 | 属性      |            说明            |  类型   | 默认值 |
 | --------- | :------------------------: | :-----: | -----: |
@@ -133,22 +133,17 @@ handleChange(e) {
 | disabled  |            禁用            | boolean |  false |
 | title     |            标题            | string  |      - |
 | direction | 方向，可选值有[left/right] | string  |      - |
-| options   |                            |  array  |     [] |
+| options   |  传入的数组对象，参数有 { label,checked,disabled } |  array  |     [] |
 
-#### 事件
+#### Event 事件
 
 | 事件名 | 说明 | 参数 |
 | ------ | ---- | ---- |
-| onChange | 勾选点击改变值时触发 | e.detail.value |
+| onChange | 勾选点击改变值时触发 | function:(e) => e.detail.value |
 
 
-#### slot
 
-| 名称 | 说明 |
-| ---- | ---- |
-
-
-#### 自定义类名
+#### Class 自定义类名
 
 | 类名       | 说明         |
 | ---------- | ------------ |

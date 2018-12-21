@@ -6,7 +6,7 @@
 
 ```json
 "usingComponents": {
-  "w-drop-menu": "path/to/w-drop-menu/index",
+  "w-drop-menu": "wuss-weapp/w-drop-menu/index",
 }
 ```
 
@@ -132,26 +132,26 @@ handleChange(e) {
 
 ### API 
 
-#### 属性
+#### Attribute 属性
 
 | 属性      | 说明 | 类型  | 默认值 |
 | --------- | :--: | :---: | -----: |
 | options |   父组件传递过来的菜单数组对象, 参数有: text,show,highlight,options   | array |      [] |
 
-#### 事件
+#### Event 事件
 
 | 事件名 | 说明 | 参数 |
 | ------ | ---- | ---- |
 | onChange | 筛选条件选中或改变时的回调     | event |    e.detail  |
 
 
-#### slot
+#### Slot 插槽
 
 | 名称 | 说明 |
 | ---- | ---- |
 | filter |  当options的item type为filter并且定义了slotName时为对应组件的slot名称    | - |      - |
 
-#### 自定义类名
+#### Class 自定义类名
 
 | 类名       | 说明         |
 | ---------- | ------------ |

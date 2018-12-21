@@ -6,7 +6,7 @@
 
 ```json
 "usingComponents": {
-  "w-dialog": "path/to/w-dialog/index",
+  "w-dialog": "wuss-weapp/w-dialog/index",
 }
 ```
 
@@ -62,7 +62,7 @@
 
 ### API
 
-#### 属性
+#### Attribute 属性
 
 | 属性      |             说明             |  类型   | 默认值 |
 | --------- | :--------------------------: | :-----: | -----: |
@@ -71,19 +71,19 @@
 | maskClose |   点击遮罩层是否可以关闭？   | boolean |  false |
 | height    |  dialog 的内容区高度，可选   | string  |      - |
 
-#### 事件
+#### Event 事件
 
 | 事件名 | 说明 | 参数 |
 | ------ | ---- | ---- |
 
 
-#### slot
+#### Slot 插槽
 
 | 名称 | 说明 |
 | ---- | ---- |
 
 
-#### 自定义类名
+#### Class 自定义类名
 
 | 类名       | 说明         |
 | ---------- | ------------ |

@@ -6,7 +6,7 @@
 
 ```json
 "usingComponents": {
-  "w-vcode": "path/to/w-vcode/index",
+  "w-vcode": "wuss-weapp/w-vcode/index",
 }
 ```
 
@@ -45,7 +45,7 @@ handleChange() {
 
 ### API
 
-#### 属性
+#### Attribute 属性
 
 | 属性         | 说明 |  类型   | 默认值 |
 | ------------ | :--: | :-----: | -----: |
@@ -56,7 +56,7 @@ handleChange() {
 | title               |   验证码图片地址   | String |  -    |
 | confirmTextColor    |   最大长度   | Number |   -    |
 
-#### 事件
+#### Event 事件
 
 | 事件名 | 说明 | 参数 |
 | ------ | ---- | ---- |
@@ -64,14 +64,14 @@ handleChange() {
 | onChangeVCode |  验证码图片被点击时触发    | - |
 
 
-#### slot
+#### Slot 插槽
 
 | 名称 | 说明 |
 | ---- | ---- |
 | slot      |   指定的图片验证码   |
 
 
-#### 自定义类名
+#### Class 自定义类名
 
 | 类名       | 说明         |
 | ---------- | ------------ |

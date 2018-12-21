@@ -6,7 +6,7 @@
 
 ```json
 "usingComponents": {
-  "w-cell": "path/to/w-cell/index",
+  "w-cell": "wuss-weapp/w-cell/index",
 }
 ```
 
@@ -205,7 +205,7 @@
 
 ### API
 
-#### 属性
+#### Attribute 属性
 
 | 属性 |    说明    |  类型  | 默认值 |
 | ---- | :--------: | :----: | -----: |
@@ -226,14 +226,14 @@
 | isValidateIcon | 是否是表单中的按钮,开启是将触发表单功能 | boolean | false |
 
 
-#### 事件
+#### Event 事件
 
 | 事件名 | 说明 | 参数 |
 | ------ | ---- | ---- |
 | onClick | 点击事件回调 | ---- |
 
 
-#### slot
+#### Slot 插槽
 
 | 名称 | 说明 |
 | ---- | ---- |
@@ -243,7 +243,7 @@
 | slot | 默认的slot是content的slot |
 
 
-#### 自定义类名
+#### Class 自定义类名
 
 | 类名               | 说明 |
 | ------------------ | ---- |

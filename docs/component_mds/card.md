@@ -6,7 +6,7 @@
 
 ```json
 "usingComponents": {
-  "w-card": "path/to/w-card/index",
+  "w-card": "wuss-weapp/w-card/index",
 }
 ```
 
@@ -113,7 +113,7 @@ handleChange(e) {
 
 ### API
 
-#### 属性
+#### Attribute 属性
 
 | 属性 |    说明    |  类型  | 默认值 |
 | ---- | :--------: | :----: | -----: |
@@ -126,7 +126,7 @@ handleChange(e) {
 | shadow | 开启卡片阴影 | boolean | true |
 | loading | 进入loading模式 | boolean | false |
 
-#### 事件
+#### Event 事件
 
 | 事件名 | 说明 | 参数 |
 | ------ | ---- | ---- |
@@ -134,13 +134,13 @@ handleChange(e) {
 | onBdClick | body被点击回调 | - |
 
 
-#### slot
+#### Slot 插槽
 
 | 名称 | 说明 |
 | ---- | ---- |
 
 
-#### 自定义类名
+#### Class 自定义类名
 
 | 类名       | 说明         |
 | ---------- | ------------ |

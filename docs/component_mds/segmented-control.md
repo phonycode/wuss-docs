@@ -6,7 +6,7 @@
 
 ```json
 "usingComponents": {
-  "w-segmented-control": "path/to/w-segmented-control/index",
+  "w-segmented-control": "wuss-weapp/w-segmented-control/index",
 }
 ```
 
@@ -78,7 +78,7 @@ data: {
 
 ### API
 
-#### 属性
+#### Attribute 属性
 
 | 属性         | 说明 |  类型   | 默认值 |
 | ------------ | :--: | :-----: | -----: |
@@ -88,21 +88,21 @@ data: {
 | defaultIndex          |   初始化默认的索引   | number |  0  |
 | styles               |   自定义样式   | string |  -    |
 
-#### 事件
+#### Event 事件
 
 | 事件名 | 说明 | 参数 |
 | ------ | ---- | ---- |
 | onChange      |   值改变时触发   | e.detail.value |
 
 
-#### slot
+#### Slot 插槽
 
 | 名称 | 说明 |
 | ---- | ---- |
 | slot      |   指定的图片验证码   |
 
 
-#### 自定义类名
+#### Class 自定义类名
 
 | 类名       | 说明         |
 | ---------- | ------------ |
