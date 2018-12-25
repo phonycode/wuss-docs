@@ -13,13 +13,13 @@ QQ 群号 787275772
 1. 通过使用shell命令或git定位到当前小程序开发目录，然后使用npm或者yarn安装依赖。
 
 ```shell
-npm init && npm install --production wuss-weapp
+npm init && npm install --save wuss-weapp --production
 ```
 
 或者
 
 ```shell
-yarn init && yarn add --production wuss-weapp
+yarn init && yarn add --save wuss-weapp --production
 ```
 
 2. 当依赖安装完成后即可在微信小程序开发者工具里点击 <span style="text-decoration: underline;color: red;font-weight: bold;">[工具] => [构建npm]</span>，此时若出现弹窗则记得吧 <span style="text-decoration: underline;color: red;font-weight: bold;">“使用npm模块”</span> 勾上，若无弹窗则待构建完成后在详情里面手动勾上<span style="text-decoration: underline;color: red;font-weight: bold;">“使用npm模块”</span>。

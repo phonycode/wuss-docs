@@ -14,20 +14,42 @@
 
 ```html
 w-cell-group>
-<w-cell-pickers
-  label="选择地区"
-  options="{{ options }}"
-  title="请选择地区"
-  defaultValue="{{[1,1,5]}}"
-/>
+<w-cell-group>
+	<w-cell-picker
+	 label="多选联动模式"
+	 options="{{ options1 }}"
+	 title="请选择地区"
+	 defaultValue="{{[1,1,5]}}"
+   bind:onSelect="handleSelect"
+	/>
+  <w-cell-picker
+	 label="单选模式"
+	 title="请选择性别"
+	 options="{{ options2 }}"
+	 defaultValue="男"
+   bind:onSelect="handleSelect"
+	/>
+  <w-cell-picker
+	 label="单选模式2"
+	 title="请选择续费时间"
+	 options="{{ options4 }}"
+	 defaultValue="60"
+   bind:onSelect="handleSelect"
+	/>
+  <w-cell-picker
+	 label="多选联动模式"
+   placeholder="请选择语言"
+	 options="{{ options3 }}"
+	 title="请选择语言"
+   bind:onSelect="handleSelect"
+	/>
 </w-cell-group>
 ```
 
 ```javascript
 data: {
-  options: [
-    [
-      {
+  options1: [
+    [{
         key: '北京市',
         value: '110000',
       },
@@ -36,8 +58,7 @@ data: {
         value: '440000',
       },
     ],
-    [
-      {
+    [{
         key: '市辖区',
         value: '110100',
         parent: '110000',
@@ -53,8 +74,7 @@ data: {
         parent: '440000',
       },
     ],
-    [
-      {
+    [{
         key: '东城区',
         value: '110101',
         parent: '110100',
@@ -241,7 +261,51 @@ data: {
       },
     ],
   ],
-}
+  options2: ['男', '女'],
+  options4: [{ key: '30天', value: 30 },{ key: '60天', value: 60 },{ key: '90天', value: 90 },{ key: '1年', value: 365 },{ key: '10年', value: 3650 },],
+  options3: [
+    [{
+        key: '前端',
+        value: '0'
+      },
+      {
+        key: '后端',
+        value: '1'
+      },
+    ],
+    [{
+        key: 'Javascript',
+        value: '2',
+        parent: '0'
+      },
+      {
+        key: 'css3',
+        value: '3',
+        parent: '0'
+      },
+      {
+        key: 'html5',
+        value: '4',
+        parent: '0'
+      },
+      {
+        key: 'Java',
+        value: '5',
+        parent: '1'
+      },
+      {
+        key: 'PHP',
+        value: '6',
+        parent: '1'
+      },
+      {
+        key: 'Python',
+        value: '7',
+        parent: '1'
+      },
+    ],
+  ],
+},
 ```
 
 ### API
@@ -266,6 +330,8 @@ data: {
 | ------ | ---- | ---- |
 | onChange      |   picker值改变时触发   | e.detail.value |
 | onSelect      |  点击确认时触发    | e.detail.value |
+| onOpen      |  popup弹出时触发    | - |
+| onCancel      |  popup收起时触发    | - |
 
 
 #### Slot 插槽

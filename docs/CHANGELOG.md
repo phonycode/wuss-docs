@@ -1,3 +1,31 @@
+## v 2.0.9
+
+#### 修复
+
+- 修复了 w-cell-picker 在popup里可以滚动问题。[#5783346](https://github.com/phonycode/wuss-weapp/commit/6ed52c499f45aec61355a7079203ac77609695c7)
+- 修复了 w-input 抛出错误问题。[#3008f36](https://github.com/phonycode/wuss-weapp/commit/57833461805b757a54c6136f763bb208b148a9cc)
+
+
+#### 支持
+
+- w-card 将支持更长的数据加载块渲染.[#99fd5aa](https://github.com/phonycode/wuss-weapp/commit/3008f363519443cae3c2826d2d5fb028c7b8c74c)
+
+
+
+
+## v 2.0.8
+
+#### 修复
+
+- 修复了w-cell-picker 修复了在取消选择值的时候当前激活的值不会回到默认值.[#ea04ffc](https://github.com/phonycode/wuss-weapp/commit/43585d78875e8b22e7e4bd2c68d106838c88091d)
+
+- 修复了w-input 在类型为mobiled的情况下 onchange回调的手机号码带空格问题.[#c52a528](https://github.com/phonycode/wuss-weapp/commit/869395dcad1eae3723370066ed93990f42f1f792)
+
+
+- 修复了ScrollableTabView 在动态修改options时导致pageview渲染出错问题.[#3bd800f](https://github.com/phonycode/wuss-weapp/commit/ea04ffc55dc8f96ea8aea6a7126acf6f1640e93f)
+
+
+
 ## v 2.0.7
 
 #### 修复
