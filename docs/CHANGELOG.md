@@ -1,4 +1,71 @@
+## v 2.1.2
+##### 2019-02-25 09:33:00
+
+#### 修复
+
+- 移除了w-picker的警告log [#d8c02a7](https://github.com/phonycode/wuss-weapp/commit/168669a57428c6102525d5582ac08bafe5c0ba0f)
+
+- 修复了w-swiper-out 当鼠标上下滑动时也会触发展开事件，导致用户体验不友好 [#d8c02a7](https://github.com/phonycode/wuss-weapp/commit/915021936738db29fd37632ae97fb908a39d3daa)
+
+#### 支持
+
+- 抽离了公共表单校验方法到Field.js文件[#d61082f](https://github.com/phonycode/wuss-weapp/commit/542345653a2418e29b642055d3cfd61082f44f6d)
+
+- w-address-picker 支持了表单校验模块 修改[#65bb19a](https://github.com/phonycode/wuss-weapp/commit/671e1b002c866d3d104b8224e9049173d18b166a)
+
+- w-date-picker 支持了表单校验模块 修改[#65bb19a](https://github.com/phonycode/wuss-weapp/commit/3831c3fe2e9bb4a1bfdc092683a2560fc40d21a9)
+
+
+
+## v 2.1.1
+##### 2019-02-23 16:22:09
+
+#### 修复
+
+- 修复了 w-badge onClick回调报错问题[#d8c02a7](https://github.com/phonycode/wuss-weapp/commit/c30c183142aafbb4b0570441ec5181d9c8c48050)
+
+
+#### 支持
+
+- w-input 支持了label左边的自定义图标 添加icon slot[#65bb19a](https://github.com/phonycode/wuss-weapp/commit/e7e9e6d4d43a79d113ba794f1253f0683a9e4341)
+
+- w-validate 支持了校验图标的class 修改[#65bb19a](https://github.com/phonycode/wuss-weapp/commit/051a6f2cc42471c2545cf5141ad50c765c6f3673)
+
+
+#### 新增
+
+- w-drop-menu 新增了custom类型，用户可自定义处理[#0f05125](https://github.com/phonycode/wuss-weapp/commit/884311a7e5011d9322ff4c7a4c7c3e5d76a7c938)
+
+
+## v 2.1.0
+##### 2019-01-26 16:17:09
+
+#### 修复
+
+- 修复了 w-address-picker 无法被w-form表单收集值问题[#d8c02a7](https://github.com/phonycode/wuss-weapp/commit/d0a20d36042436c7a10f541f79576b94f7ccd1c)
+
+- 修复了 w-address-picker 无法被w-form表单收集值问题[#d8c02a7](https://github.com/phonycode/wuss-weapp/commit/d0a20d36042436c7a10f541f79576b94f7ccd1c)
+
+#### 重构
+
+- 重构了 w-drop-menu 组件[#5b42442](https://github.com/phonycode/wuss-weapp/commit/b1d296f874c7569b0cf3b770ed1cf41dd8a2679a)
+
+
+#### 支持
+
+- 所有组件都将继承于wussComponent. [#65bb19a](https://github.com/phonycode/wuss-weapp/commit/d8c02a7f904f52c5284466d8cac0dff2c25ddc73)
+
+- w=cell-picker 支持了date-picker组件的使用[#d0a20d3](https://github.com/phonycode/wuss-weapp/commit/5b42442c3e92ec7c1571a391bdfe988d416617b0)
+
+
+#### 新增
+
+- 新增了DatePicker组件，日期/时间选择器[#0f05125](https://github.com/phonycode/wuss-weapp/commit/65bb19ae1177a3a7480d63a6b8fcb3cfe044f2a1)
+
+
+
 ## v 2.0.9
+##### 2018-12-25 14:26:52
 
 #### 修复
 
@@ -14,6 +81,7 @@
 
 
 ## v 2.0.8
+##### 2018-10-24 16:17:09
 
 #### 修复
 
@@ -27,6 +95,7 @@
 
 
 ## v 2.0.7
+##### 2018-10-02 16:17:09
 
 #### 修复
 
@@ -36,6 +105,7 @@
 
 
 ## v 2.0.6
+##### 2018-09-19 08:27:04
 
 #### 修复
 

@@ -136,7 +136,14 @@ handleChange(e) {
 
 | 属性      | 说明 | 类型  | 默认值 |
 | --------- | :--: | :---: | -----: |
-| options |   父组件传递过来的菜单数组对象, 参数有: text,show,highlight,options   | array |      [] |
+| options |  父组件传递过来的菜单数组对象, 参数有: text,show,highlight,options  | array |  - |
+| options.type |  筛选栏类型[radio/checkbox/filter/sort/custom]  | string |  - |
+| options.type |  筛选栏类型[radio/checkbox/filter/sort/custom]  | string |  - |
+| defaultColor |  默认颜色  | string |  999999 |
+| activeColor |  激活颜色  | string | ff8800 |
+| height |  bar的高度  | string, number |  88rpx |
+| border |  显示底部线条  | boolean |  true |
+| popupStyles |  弹出层的样式  | string |  - |
 
 #### Event 事件
 
