@@ -81,6 +81,7 @@ module.exports = {
           ['/component_mds/checkbox', 'Checkbox 复选框'],
           ['/component_mds/cell-picker', 'CellPicker 选择器'],
           ['/component_mds/address-picker', 'AddressPicker 地区联动选择器'],
+          ['/component_mds/date-picker', 'DatePicker 日期/时间选择器'],
           ['/component_mds/calendar', 'Calendar 日历选择器'],
           ['/component_mds/range', 'Range 区域选择'],
           ['/component_mds/number', 'Number 步进器'],
