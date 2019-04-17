@@ -1,3 +1,38 @@
+## v 2.1.3
+##### 2019-04-10 16:21:00
+
+#### 修复
+
+- 修复了 w-address-picker 没有初始化校验问题
+
+- 修复了 w-date-picker 修复了取值问题.
+
+#### 支持
+
+- w-validate 支持了初始化校验功能，可指定表单组件初始化时是否需要校验，firstValidate默认false
+
+- w-cell-picker 支持了shouldValueUpdate属性，指定该方法来处理何时需要更新值。类似React的shouldComponentUpdated().
+
+
+## v 2.1.3
+##### 2019-03-14 10:12:09
+
+#### 修复
+
+- 修复了 w-swiper-out 修复了当鼠标Y轴移出超过swiper-out组件区域时也自动展开问题。
+
+- 修复了 w-cell-picker 修复了defaultValue和options值不同步问题并处理优化了w-date-picker的处理。
+
+- 修复了 w-card 修复了当slot content的内容高度小于骨架屏的常量高度时，无法显示问题。
+
+- 修复了 w-activity-indicator 带文本时样式位置不对[#]()
+
+#### 重构
+
+- 重构了 w-date-picker 从2.1.3版本开始 w-date-picker 将不使用mode模式来控制时间格式。新版本用户可通过format属性来任意定义时间模板格式。例如： YYYY-MM-DD HH:mm:ss
+
+
+
 ## v 2.1.2
 ##### 2019-02-25 09:33:00
 

@@ -164,13 +164,27 @@ extraClick(e) {
 #### Event 事件
 
 | 事件名 | 说明 | 参数 |
-| ------ | ---- | ---- |
+| onChange | input改变时触发 | ---- |
+| input | input改变时触发 | ---- |
+| onFocus | 被激活触发 | ---- |
+| onConfirm | 回车或点击键盘确定触发 | ---- |
+| onBlur | 失去焦点触发 | ---- |
+| extraClick | 副标题被点击 | ---- |
+| lineChange | 输入框行数变化时调用,仅textarea支持 | ---- |
+| clearClick | 清除按钮被点击时触发 | ---- |
+
+
+
+
+
+
+
 
 
 #### Slot 插槽
 
 | 名称 | 说明 |
-| ---- | ---- |
+| icon | 设置input左边图标 |
 
 
 #### Class 自定义类名

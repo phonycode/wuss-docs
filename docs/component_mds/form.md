@@ -6,18 +6,29 @@
 
 ```json
 "usingComponents": {
-"w-cell-group": "wuss-weapp/w-cell-group/index",
-"w-cell": "wuss-weapp/w-cell/index",
-"w-input": "wuss-weapp/w-input/index",
-"w-checkbox": "wuss-weapp/w-checkbox/index",
-"w-button": "wuss-weapp/w-button/index",
-"w-form": "wuss-weapp/w-form/index",
-"w-switch": "wuss-weapp/w-switch/index",
-"w-radio": "wuss-weapp/w-radio/index",
-"w-validate": "wuss-weapp/w-validate/index",
-"w-pane": "wuss-weapp/w-pane/index"
+  "w-cell": "/dist/w-cell/index",
+  "w-cell-group": "/dist/w-cell-group/index",
+  "w-input": "/dist/w-input/index",
+  "w-checkbox": "/dist/w-checkbox/index",
+  "w-button": "/dist/w-button/index",
+  "w-form": "/dist/w-form/index",
+  "w-switch": "/dist/w-switch/index",
+  "w-radio": "/dist/w-radio/index",
+  "w-date-picker": "/dist/w-date-picker/index",
+  "w-address-picker": "/dist/w-address-picker/index",
+  "w-cell-picker": "/dist/w-cell-picker/index",
+  "w-number": "/dist/w-number/index",
+  "w-vcode": "/dist/w-vcode/index",
+  "w-validate": "/dist/w-validate/index",
+  "w-pane": "/dist/w-pane/index"
 }
 ```
+
+
+### 视频演示
+
+<video style="margin: 20px 0;" height="450px" autoplay="true" loop="true" controls x5-playsinline="true" playsinline="true" webkit-playsinline="true" src="../../resource/form.mp4"
+/>
 
 ### 表单域
 
@@ -49,59 +60,116 @@
 ### 代码演示
 
 ```html
-<w-pane title="Form" desc="表单" />
-<w-form bind:onSubmit="wussFormSubmit" bind:onReset="wussFormReset" isValidateBtn>
-  <w-cell-group>
+<w-form
+ bind:onSubmit="wussFormSubmit"
+ bind:onReset="wussFormReset"
+ isValidateBtn
+>
+	<w-cell-group>
+		<w-validate rules="{{ userNameRules }}">
+			<w-input
+			 name="userName"
+			 placeholder="请输入你的姓名"
+			 clear
+			 label="姓名"
+			/>
+		</w-validate>
 
-    <w-validate rules="{{ userNameRules }}">
-      <w-input name="userName" placeholder="请输入你的姓名" clear label="姓名" />
-    </w-validate>
+		<w-validate rules="{{ { mode:['mobile'] } }}">
+			<w-input
+			 type="mobile"
+			 name="mobile"
+			 clear
+			 placeholder="请输入你的手机号"
+			 label="手机号"
+			/>
+		</w-validate>
 
-    <w-validate rules="{{{ mode:['mobile'] }}}">
-      <w-input type="mobile" name="mobile" clear placeholder="请输入你的手机号" label="手机号" />
-    </w-validate>
+		<w-validate firstValidate rules="{{ isRequired }}">
+			<w-cell-picker
+			 label="性别"
+			 title="请选择性别"
+			 placeholder="请选择性别"
+			 options="{{ [['男','女']] }}"
+			 name="sex"
+			 bind:onOpen="handlePickerOpen"
+			 bind:onCancel="handlePickerCancel"
+			/>
+		</w-validate>
 
-    <w-validate rules="{{ isRequired }}">
-      <w-cell-picker label="性别" title="请选择性别" placeholder="请选择性别" options="{{ [['男','女']] }}" name="sex" />
-    </w-validate>
+		<w-validate firstValidate rules="{{ isRequired }}">
+			<w-address-picker
+			 label="选择地区"
+			 name="region"
+			/>
+		</w-validate>
 
-    <w-validate rules="{{ isRequired }}">
-      <w-address-picker label="选择地区" name="region" />
-    </w-validate>
+		<view
+		 hidden="{{ textarea_visible }}"
+		 class=""
+		 hover-class="none"
+		 hover-stop-propagation="false"
+		>
+			<w-validate rules="{{ isRequired }}">
+				<w-input
+				 clear
+				 type="textarea"
+				 label="地址"
+				 name="address"
+				 placeholder="请输入详细地址..."
+				/>
+			</w-validate>
+		</view>
 
-    <w-validate rules="{{ isRequired }}">
-      <w-input clear type="textarea" label="地址" name="address" placeholder="请输入详细地址..." />
-    </w-validate>
+		<w-cell label="同意用户协议信息">
+			<w-switch
+			 name="isVip"
+			 slot="content"
+			/>
+		</w-cell>
 
-    <w-cell label="同意用户协议信息">
-      <w-switch name="isVip" slot="content" />
-    </w-cell>
+		<w-validate firstValidate rules="{{ isRequired }}">
+			<w-date-picker
+			 name="createTime"
+			 mode="dateTime"
+			 label="出生日期"
+			 title="请选择日期"
+			/>
+		</w-validate>
 
-    <w-radio label="请选择手机" name="radio" defaultValue="huawei" options="{{ options1 }}" />
+		<w-radio
+		 label="请选择手机"
+		 name="radio"
+		 defaultValue="huawei"
+		 options="{{ options1 }}"
+		/>
 
-    <w-checkbox name="checkbox" options="{{ items1 }}" />
+		<w-checkbox
+		 name="checkbox"
+		 options="{{ items1 }}"
+		/>
 
-    <w-cell>
-      <w-button inline type="info" formType="submit">
-        提交
-      </w-button>
-      <w-button inline type="warn" formType="reset">
-        重置
-      </w-button>
-    </w-cell>
-  </w-cell-group>
+		<w-cell>
+			<w-button
+			 inline
+			 type="info"
+			 formType="submit"
+			>
+				提交
+			</w-button>
+			<w-button
+			 inline
+			 type="warn"
+			 formType="reset"
+			>
+				重置
+			</w-button>
+		</w-cell>
+	</w-cell-group>
 </w-form>
 ```
 
 ```javascript
-const MOCK_DATA = {
-  productName: 'iphone X max',
-  total: 1,
-  num: 642135,
-  id: 2143324234,
-  price: 12700.0,
-  desc: 'iphone is good',
-};
 data: {
   userNameRules: {
     maxLength: {
@@ -150,6 +218,13 @@ data: {
       ...MOCK_DATA,
     },
   ],
+  textarea_visible: true,
+},
+handlePickerOpen() {
+  this.setData({ textarea_visible: true })
+},
+handlePickerCancel() {
+  this.setData({ textarea_visible: false })
 },
 wussFormSubmit(e) {
   console.log('提交了:', e.detail);
@@ -197,6 +272,7 @@ wussFormReset(e) {
 | rules                  | 校验规则对象               | object | { required: { value: true, message: '必填' } } |
 | rules.required.value   | 校验规则的值               |  any   | -                                              |
 | rules.required.message | 当前校验不通过时的错误提示 | String | -                                              |
+| firstValidate                  | 是否需要初始化校验               | boolean | false |
 
 ##### rules 常用校验规则
 

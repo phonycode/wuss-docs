@@ -137,7 +137,11 @@ handleChange(e) {
 #### Slot 插槽
 
 | 名称 | 说明 |
-| ---- | ---- |
+| content | 内容区信息 |
+| footer | 底部标题 |
+| footer-extra | 底部副标题 |
+| title | 头部标题 |
+| extra | 头部副标题 |
 
 
 #### Class 自定义类名
