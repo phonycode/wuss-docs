@@ -1,3 +1,16 @@
+## v 2.1.8
+##### 2019-05-30 16:21:00
+
+#### 修复
+
+- 修复了 w-action-sheet w-alert w-calendar w-card w-cell-picker w-cell w-confirm w-drop-menu w-input w-marquee-item w-mask-shadow w-number w-range w-rater w-segmented-control w-swiper-out w-switch w-toast w-vcode 的点击事件处理机制
+
+- 修复了部分组件css样式规范问题
+
+- 修复了w-swiper-out的宽度计算问题
+
+- 修复了w-mask点击穿透并可以滚动问题
+
 ## v 2.1.3
 ##### 2019-04-10 16:21:00
 
