@@ -27,7 +27,7 @@
 	<w-accordion title="Wuss WeAPP 1" key="你好">
 		content 1
 	</w-accordion>
-	<w-accordion title="Wuss WeAPP 2" key="{{['你好']}}">
+	<w-accordion title="Wuss WeAPP 2" key="{{ ['你好'] }}">
 		content 2
 	</w-accordion>
 	<w-accordion
@@ -35,7 +35,7 @@
 	 title="Wuss WeAPP 3"
 	 key="我是被禁用的"
 	/>
-	<w-accordion title="Wuss WeAPP 4" key="{{{say:'你好'}}}">
+	<w-accordion title="Wuss WeAPP 4" key="{{ { say:'你好' } }}">
 		content 4
 	</w-accordion>
 </w-accordion-group>
@@ -51,7 +51,7 @@
 	<w-accordion title="Wuss WeAPP 1" key="你好">
 		content 1
 	</w-accordion>
-	<w-accordion title="Wuss WeAPP 2" key="{{['你好']}}">
+	<w-accordion title="Wuss WeAPP 2" key="{{ ['你好'] }}">
 		content 2
 	</w-accordion>
 	<w-accordion
@@ -59,7 +59,7 @@
 	 title="Wuss WeAPP 3"
 	 key="我是被禁用的"
 	/>
-	<w-accordion title="Wuss WeAPP 4" key="{{{say:'你好'}}}">
+	<w-accordion title="Wuss WeAPP 4" key="{{ { say: '你好' } }}">
 		content 4
 	</w-accordion>
 </w-accordion-group>

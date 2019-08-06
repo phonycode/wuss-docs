@@ -147,6 +147,7 @@ handleSelected(e) {
 | endDate | 结束的年份 默认为当前的年份 | Number | new Date().getFullYear() |
 | suffixName | 每个column对应的后缀名称 | Array | ['年','月','日','时','分','秒'] |
 | defaultValue | 设置初始化默认值,值可以为时间蹉、格式化后的字符串时间或数组格式的时间，如['2019年','09月','15号',....] | [String,Number,Array] | [formateDate/timestamp/dateArray] |
+| currentValue      |  动态设置值. *（需要动态设置请使用currentValue)    | any | - |
 | cancelTextColor | picker取消文本的字体颜色 | String | - |
 | cancelText | picker取消文本 | String | 取消 |
 | confirmTextColor | picker确认文本的字体颜色 | String | - |

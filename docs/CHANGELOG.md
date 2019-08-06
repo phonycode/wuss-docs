@@ -1,3 +1,22 @@
+## v 2.2.0
+##### 2019-08-06 12:00:00
+
+#### 优化
+
+- 移除了 w-button 的hover的渐变动画
+
+- 优化了 w-cell-picker w-date-picker w-address-picker并支持了 currentValue属性，支持动态设置值
+
+- 调整了 w-loading 的文字大小
+
+- 调整了 w-toast 的内容区的样式和文本的文字大小
+
+#### 修复
+
+- 修复 w-mask-shadow w-popup 点击事件机制处理
+
+- 修复 w-swiper-out 的侧滑bug
+
 ## v 2.1.8
 ##### 2019-05-30 16:21:00
 

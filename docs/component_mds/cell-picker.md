@@ -20,27 +20,37 @@
 
 ```html
 <w-cell-group>
+	<w-cell-picker
+	 label="多选联动模式"
+	 options="{{ options1 }}"
+	 title="请选择地区"
+	 defaultValue="{{ ['440000', '440100', '440105'] }}"
+   bind:onSelect="handleSelect"
+	/>
   <w-cell-picker
 	 label="单选模式"
 	 title="请选择性别"
 	 options="{{ options2 }}"
-	 defaultValue="男"
+	 defaultValue="女"
+   shouldValueUpdate="{{ shouldValueUpdate }}"
    bind:onSelect="handleSelect"
 	/>
   <w-cell-picker
 	 label="单选模式2"
 	 title="请选择续费时间"
 	 options="{{ options4 }}"
-	 defaultValue="60"
+   defaultValue="60"
    bind:onSelect="handleSelect"
 	/>
   <w-cell-picker
 	 label="多选联动模式"
    placeholder="请选择语言"
 	 options="{{ options3 }}"
+   defaultValue="{{ ['1', '4'] }}"
+   currentValue="{{ currentValue }}"
 	 title="请选择语言"
    bind:onSelect="handleSelect"
-	/>
+  />
 </w-cell-group>
 ```
 
@@ -102,7 +112,8 @@ data: {
 | options      |  传入的选项值,当值为[[],[],[]]格式时为联动模式,传入格式为[{},{},{}]为单例模式  | Array | [] |
 | options.key   |  options里的对象属性key表示键值,显示在picker上的值  | String | - |
 | options.value |  options里的对象属性value表示值,会返回给最终结果  | String | - |
-| defaultValue      |  默认值 可以支持 key value  | Array | [] |
+| defaultValue      |  设置picker的默认值 可以支持 key value格式（注意：defaultValue只能用来设置第一次的初始化值，后续的改变请使用currentValue设置）  | Array | [] |
+| currentValue      |  动态设置picker的值.    | any | - |
 | cancelTextColor      |  取消文本颜色    | String | - |
 | cancelText      |  取消文本文字    | String | '取消' |
 | title      |  标题    | String | [] |
@@ -110,7 +121,6 @@ data: {
 | confirmText      |  确认文本文字    | String | '确认' |
 | showValue      |  是否用value而不是key展示    | Boolean | false |
 | defaultKey      |  onChange和onSelect事件返回的值是何种格式 [value,value...] [key,key,...]    | String | 'value' |
-| shouldValueUpdate      |  指定该方法来处理何时需要更新值。类似React的shouldComponentUpdated()    | Function | ():boolean => true |
 
 #### Event 事件
 

@@ -22,7 +22,7 @@ module.exports = {
         children: [
           ['/quickstart', '快速上手'], 
           ['/CHANGELOG', '更新日志'],
-          ['/support', '框架支持情况？'],
+          // ['/support', '框架支持情况？'],
         ],
       },
       {
