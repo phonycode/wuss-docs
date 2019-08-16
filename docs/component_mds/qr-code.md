@@ -57,6 +57,7 @@
 | ---- | :--------: | :----: | -----: |
 | text | 二维码信息 | string |      - |
 | size | 二维码大小 | string |      - |
+| usingEncode | 开启后生成的二维码自动encodeURIComponent | string |    false |
 
 #### Event 事件
 

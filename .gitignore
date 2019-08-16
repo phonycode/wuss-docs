@@ -2,3 +2,5 @@ node_modules
 weapp-componts
 wuss
 resource
+.vuepress
+dist
