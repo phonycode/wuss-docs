@@ -120,6 +120,7 @@ data: {
 | confirmTextColor      |  确认文本颜色    | String | - |
 | confirmText      |  确认文本文字    | String | '确认' |
 | showValue      |  是否用value而不是key展示    | Boolean | false |
+| maskClosable      |  点击蒙层是否允许关闭    | Boolean | true |
 | defaultKey      |  onChange和onSelect事件返回的值是何种格式 [value,value...] [key,key,...]    | String | 'value' |
 
 #### Event 事件

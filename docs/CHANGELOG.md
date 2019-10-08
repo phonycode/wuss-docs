@@ -1,3 +1,14 @@
+## v 2.3.3
+##### 2019-10-08 11:24:00
+
+#### 支持
+
+- w-cell-picker、w-date-picker支持 maskClosable(点击蒙层是否允许关闭) 属性
+
+#### 重构
+
+- 因兼容性问题, 2.3.3版本将移除regeneratorRuntime async/await垫片
+
 ## v 2.3.0
 ##### 2019-08-16 18:30:00
 

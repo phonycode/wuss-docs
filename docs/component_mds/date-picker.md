@@ -151,6 +151,7 @@ handleSelected(e) {
 | cancelTextColor | picker取消文本的字体颜色 | String | - |
 | cancelText | picker取消文本 | String | 取消 |
 | confirmTextColor | picker确认文本的字体颜色 | String | - |
+| maskClosable | 点击蒙层是否允许关闭 | Boolean | true |
 | confirmText | picker确认文本 | String | 确认 |
 | placeholder | date picker的占位符文本 | String | - |
 
